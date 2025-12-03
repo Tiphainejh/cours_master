@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Relations Internationales{% endblock %}</title>
+    <title>{% block title %}Cours MASNI{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1><a href="/">📚 Histoire des Relations Internationales</a></h1>
+            <h1><a href="/">📚 Cours Master MASNI</a></h1>
             
             <!-- Bouton menu burger pour mobile -->
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -19,20 +19,47 @@
             </button>
             
             <!-- Navigation -->
-<nav class="main-nav" id="mainNav">
-    <ul>
-        <li><a href="/" class="nav-link">🏠 Accueil</a></li>
-        <li><a href="/cours/definitions-ri" class="nav-link">📖 Définitions RI</a></li>
-        <li><a href="/cours/economie-20e" class="nav-link">💰 Économie XXe</a></li>
-        <li><a href="/cours/diplomatie-culturelle" class="nav-link">🎭 Diplomatie</a></li>
-        <li><a href="/cours/migrations" class="nav-link">✈️ Migrations</a></li>
-        <li><a href="/cours/afrique-colonisation" class="nav-link">🌍 Afrique</a></li>
-        <li><a href="/cours/onu-integration" class="nav-link">🇺🇳 ONU</a></li>
-        <li><a href="/cours/organisations-internationales" class="nav-link">🏛️ Organisations</a></li>
-        <li><a href="/cours/quest-ce-que-europe" class="nav-link">🇪🇺 Europe ?</a></li>
-        <li><a href="/cours/sport" class="nav-link">🏈 Sport</a></li>
-    </ul>
-</nav>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="/" class="nav-link">🏠 Accueil</a></li>
+                    
+                    <!-- Section Histoire RI -->
+                    <li class="nav-dropdown">
+                        <span class="nav-link nav-dropdown-toggle">📚 Histoire RI</span>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="/histoire-ri" class="nav-link">📋 Tous les cours</a></li>
+                            <li><a href="/histoire-ri/cours/definitions-ri" class="nav-link">📖 Définitions RI</a></li>
+                            <li><a href="/histoire-ri/cours/quest-ce-que-europe" class="nav-link">🇪🇺 Qu'est-ce que l'Europe ?</a></li>
+                            <li><a href="/histoire-ri/cours/organisations-internationales" class="nav-link">🏛️ Organisations</a></li>
+                            <li><a href="/histoire-ri/cours/onu-integration" class="nav-link">🇺🇳 ONU</a></li>
+                            <li><a href="/histoire-ri/cours/afrique-colonisation" class="nav-link">🌍 Afrique</a></li>
+                            <li><a href="/histoire-ri/cours/migrations" class="nav-link">✈️ Migrations</a></li>
+                            <li><a href="/histoire-ri/cours/diplomatie-culturelle" class="nav-link">🎭 Diplomatie</a></li>
+                            <li><a href="/histoire-ri/cours/sport" class="nav-link">⚽ Sport</a></li>
+                            <li><a href="/histoire-ri/cours/economie-20e" class="nav-link">💰 Économie XXe</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Section Géopolitique -->
+                    <li class="nav-dropdown">
+                        <span class="nav-link nav-dropdown-toggle">🌍 Géopolitique</span>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="/geopolitique" class="nav-link">📋 Tous les cours</a></li>
+                            <li><a href="/geopolitique/cours/seance1" class="nav-link">Séance 1 - Démarches</a></li>
+                            <li><a href="/geopolitique/cours/seance2" class="nav-link">Séance 2 - État-nation</a></li>
+                            <li><a href="/geopolitique/cours/seance3" class="nav-link">Séance 3 - Conflits</a></li>
+                            <li><a href="/geopolitique/cours/seance4" class="nav-link">Séance 4 - Europe</a></li>
+                            <li><a href="/geopolitique/cours/seance5" class="nav-link">Séance 5 - Aires culturelles</a></li>
+                            <li><a href="/geopolitique/cours/seance6" class="nav-link">Séance 6 - Inde</a></li>
+                            <li><a href="/geopolitique/cours/seance7" class="nav-link">Séance 7 - Amérique latine</a></li>
+                            <li><a href="/geopolitique/cours/seance8" class="nav-link">Séance 8 - Moyen-Orient</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Section Risques -->
+                    <li><a href="/risques" class="nav-link">⚠️ Risques Internationaux</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -44,7 +71,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Histoire des Relations Internationales - Cours universitaire</p>
+            <p>&copy; 2025 Cours Master MASNI - RICHARD Tiphaine</p>
         </div>
     </footer>
 
@@ -62,12 +89,36 @@
                 });
             }
 
+            // Gestion des dropdowns
+            document.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const parent = this.parentElement;
+                    const wasActive = parent.classList.contains('active');
+                    
+                    // Fermer tous les autres dropdowns
+                    document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+                        dropdown.classList.remove('active');
+                    });
+                    
+                    // Toggle le dropdown actuel
+                    if (!wasActive) {
+                        parent.classList.add('active');
+                    }
+                });
+            });
+
             // Fermer le menu en cliquant sur un lien
             document.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', function() {
-                    navToggle.classList.remove('active');
-                    mainNav.classList.remove('active');
-                });
+                if (!link.classList.contains('nav-dropdown-toggle')) {
+                    link.addEventListener('click', function() {
+                        navToggle.classList.remove('active');
+                        mainNav.classList.remove('active');
+                        document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+                            dropdown.classList.remove('active');
+                        });
+                    });
+                }
             });
 
             // Highlight du lien actif
