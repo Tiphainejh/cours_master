@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Géopolitique{% endblock %}
+
+{% block content %}
+<div style="margin-bottom: 2rem;">
+    <a href="/" style="text-decoration: none; color: #667eea; font-size: 1.2rem; display: inline-flex; align-items: center; transition: all 0.3s;">
+        <span style="margin-right: 0.5rem;">←</span> Retour à l'accueil
+    </a>
+</div>
+
+<div class="page-header">
+    <h2>Cours de Géopolitique</h2>
+    <p style="color: #666; font-size: 1.1rem; margin-top: 1rem;">
+        Analyse géopolitique des grands enjeux contemporains
+    </p>
+</div>
+
+<div class="cours-grid">
+    {% for c in cours %}
+    <div class="cours-card">
+        <h3>{{ c.titre }}</h3>
+        <p>{{ c.description }}</p>
+        <a href="{{ c.url }}" class="btn">Voir le cours</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

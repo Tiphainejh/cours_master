@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Relations Internationales{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="/">📚 Histoire des Relations Internationales</a></h1>
+            
+            <!-- Bouton menu burger pour mobile -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Navigation -->
+<nav class="main-nav" id="mainNav">
+    <ul>
+        <li><a href="/" class="nav-link">🏠 Accueil</a></li>
+        <li><a href="/cours/definitions-ri" class="nav-link">📖 Définitions RI</a></li>
+        <li><a href="/cours/economie-20e" class="nav-link">💰 Économie XXe</a></li>
+        <li><a href="/cours/diplomatie-culturelle" class="nav-link">🎭 Diplomatie</a></li>
+        <li><a href="/cours/migrations" class="nav-link">✈️ Migrations</a></li>
+        <li><a href="/cours/afrique-colonisation" class="nav-link">🌍 Afrique</a></li>
+        <li><a href="/cours/onu-integration" class="nav-link">🇺🇳 ONU</a></li>
+        <li><a href="/cours/organisations-internationales" class="nav-link">🏛️ Organisations</a></li>
+        <li><a href="/cours/quest-ce-que-europe" class="nav-link">🇪🇺 Europe ?</a></li>
+        <li><a href="/cours/sport" class="nav-link">🏈 Sport</a></li>
+    </ul>
+</nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Histoire des Relations Internationales - Cours universitaire</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/timeline.js') }}"></script>
+    <script>
+        // Menu burger pour mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.getElementById('navToggle');
+            const mainNav = document.getElementById('mainNav');
+            
+            if (navToggle) {
+                navToggle.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    mainNav.classList.toggle('active');
+                });
+            }
+
+            // Fermer le menu en cliquant sur un lien
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    navToggle.classList.remove('active');
+                    mainNav.classList.remove('active');
+                });
+            });
+
+            // Highlight du lien actif
+            const currentPath = window.location.pathname;
+            document.querySelectorAll('.nav-link').forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active-page');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

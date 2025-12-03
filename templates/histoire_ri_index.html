@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Histoire des Relations Internationales{% endblock %}
+
+{% block content %}
+<div style="margin-bottom: 2rem;">
+    <a href="/" style="text-decoration: none; color: #667eea; font-size: 1.2rem; display: inline-flex; align-items: center; transition: all 0.3s;">
+        <span style="margin-right: 0.5rem;">←</span> Retour à l'accueil
+    </a>
+</div>
+
+<div class="page-header">
+    <h2>Cours d'Histoire des Relations Internationales</h2>
+    <p style="color: #666; font-size: 1.1rem; margin-top: 1rem;">
+        Cours complet sur l'histoire des relations internationales au XXe siècle
+    </p>
+</div>
+
+<div class="cours-grid">
+    {% for c in cours %}
+    <div class="cours-card">
+        <h3>{{ c.titre }}</h3>
+        <p>{{ c.description }}</p>
+        <a href="{{ c.url }}" class="btn">Voir le cours</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Accueil - Cours Masni{% endblock %}
+
+{% block content %}
+<div class="hero-section" style="text-align: center; padding: 4rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 15px; margin-bottom: 3rem;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">📚 Cours Masni</h1>
+    <p style="font-size: 1.2rem; opacity: 0.9;">Relations Internationales • Géopolitique • Analyse des Risques</p>
+</div>
+
+<div class="cours-grid">
+    {% for matiere in matieres %}
+    <div class="cours-card" style="cursor: pointer;" onclick="window.location.href='{{ matiere.url }}'">
+        <div style="font-size: 3rem; margin-bottom: 1rem;">{{ matiere.icon }}</div>
+        <h3>{{ matiere.titre }}</h3>
+        <p>{{ matiere.description }}</p>
+        <a href="{{ matiere.url }}" class="btn">Accéder aux cours</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
