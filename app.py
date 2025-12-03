@@ -100,39 +100,39 @@ def histoire_ri_index():
 
 @app.route('/histoire-ri/cours/definitions-ri')
 def cours_definitions_ri():
-    return render_template('histoire-ri/cours_definitions_ri.html')
+    return render_template('histoire_ri/cours_definitions_ri.html')
 
 @app.route('/histoire-ri/cours/quest-ce-que-europe')
 def cours_europe():
-    return render_template('histoire-ri/cours_europe.html')
+    return render_template('histoire_ri/cours_europe.html')
 
 @app.route('/histoire-ri/cours/organisations-internationales')
 def cours_organisations_internationales():
-    return render_template('histoire-ri/cours_organisations.html')
+    return render_template('histoire_ri/cours_organisations.html')
 
 @app.route('/histoire-ri/cours/onu-integration')
 def cours_onu_integration():
-    return render_template('histoire-ri/cours_onu.html')
+    return render_template('histoire_ri/cours_onu.html')
 
 @app.route('/histoire-ri/cours/afrique-colonisation')
 def cours_afrique_colonisation():
-    return render_template('histoire-ri/cours_afrique.html')
+    return render_template('histoire_ri/cours_afrique.html')
 
 @app.route('/histoire-ri/cours/migrations')
 def cours_migrations():
-    return render_template('histoire-ri/cours_migrations.html')
+    return render_template('histoire_ri/cours_migrations.html')
 
 @app.route('/histoire-ri/cours/diplomatie-culturelle')
 def cours_diplomatie_culturelle():
-    return render_template('histoire-ri/cours_diplomatie_culturelle.html')
+    return render_template('histoire_ri/cours_diplomatie_culturelle.html')
 
 @app.route('/histoire-ri/cours/sport')
 def cours_sport():
-    return render_template('histoire-ri/cours_sport.html')
+    return render_template('histoire_ri/cours_sport.html')
 
 @app.route('/histoire-ri/cours/economie-20e')
 def cours_economie():
-    return render_template('histoire-ri/cours_economie.html')
+    return render_template('histoire_ri/cours_economie.html')
 
 
 # ============================================
