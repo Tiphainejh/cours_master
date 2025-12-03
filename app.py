@@ -222,7 +222,7 @@ def geopolitique_cours_seance8():
 # SECTION 3 : ANALYSE DES RISQUES INTERNATIONAUX
 # ============================================
 
-@app.route('/risques/cours_risques')
+@app.route('/risques')
 def risques_index():
     return render_template('risques/cours_risques.html')
 
