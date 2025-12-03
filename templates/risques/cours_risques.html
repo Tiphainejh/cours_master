@@ -1,1146 +1,1239 @@
 {% extends "base.html" %}
 
-{% block title %}ANALYSE DES RISQUES INTERNATIONAUX{% endblock %}
+{% block title %}Analyse des Risques Internationaux{% endblock %}
 
 {% block content %}
 
-        
-        <div class="cours-content">
+<div class="cours-content">
     <h1>Analyse des risques internationaux</h1>
 
-            <!-- Section 1: Concept fondamental -->
-            <div class="section">
-                <h2>1. LE CONCEPT FONDAMENTAL DU RISQUE</h2>
-                
-                <div class="diagram">
-                    <div class="formula">
-                        RISQUE = MENACE × VULNÉRABILITÉ
-                    </div>
-                    
-                    <div style="text-align: center; margin-top: 30px;">
-                        <div class="risk-box menace">MENACE<br><small>Élément externe</small></div>
-                        <span style="font-size: 2em; font-weight: bold;">×</span>
-                        <div class="risk-box vulnerabilite">VULNÉRABILITÉ<br><small>Élément interne</small></div>
-                        <span style="font-size: 2em; font-weight: bold;">=</span>
-                        <div class="risk-box risque">RISQUE</div>
-                    </div>
-                </div>
-                
-                <div class="highlight-box">
-                    <strong>Point clé :</strong> Un risque n'existe que lorsqu'une menace rencontre une vulnérabilité. Si l'un des deux est à zéro, il n'y a pas de danger.
-                </div>
-                
-                <h3>Sécurité vs Insécurité</h3>
-                <p><strong>Sécurité</strong> = État dans lequel le niveau de risque est réduit à son minimum</p>
-                <ul>
-                    <li>Si forte menace MAIS pas de vulnérabilité = PAS de danger</li>
-                    <li>Si forte vulnérabilité MAIS pas de menace = PAS de danger</li>
-                    <li>Se concentrer sur les <strong>risques réels</strong> (ni menace ni vulnérabilité à zéro)</li>
-                    <li>Plus ces deux variables augmentent, plus il y a d'insécurité</li>
-                </ul>
-                
-                <h3>Deux types de sécurité</h3>
-                <div class="strategy-grid">
-                    <div class="strategy-card">
-                        <h3>Sécurité Objective</h3>
-                        <p>État réel de la sécurité</p>
-                    </div>
-                    <div class="strategy-card">
-                        <h3>Sécurité Subjective</h3>
-                        <p>État perçu (sentiment)</p>
-                        <p><strong>Important :</strong> La perception impacte la sécurité objective car on agit selon notre subjectivité</p>
-                    </div>
-                </div>
+    <!-- Section 1: Concept fondamental -->
+    <section id="concept-fondamental">
+        <h2>1. LE CONCEPT FONDAMENTAL DU RISQUE</h2>
+        
+        <div class="schema-box">
+            <div style="text-align: center; font-size: 2em; font-weight: bold; padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 15px; margin-bottom: 2rem;">
+                RISQUE = MENACE × VULNÉRABILITÉ
             </div>
             
-            <!-- Section 2: Sécurité des organisations -->
-            <div class="section">
-                <h2>2. SÉCURITÉ DES ORGANISATIONS</h2>
-                
-                <h3>Objectif</h3>
-                <p><strong>Réduction maximum du niveau de risque auquel sont exposés :</strong></p>
-                <div class="diagram">
-                    <ol style="font-size: 1.1em; line-height: 2;">
-                        <li>L'organisation et ses dirigeants</li>
-                        <li>Son patrimoine matériel et financier</li>
-                        <li>Ses personnels</li>
-                        <li>Les tiers (clients, fournisseurs, sous-traitants, partenaires)</li>
-                    </ol>
+            <div style="text-align: center; margin-top: 30px; display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                <div class="schema-item" style="flex: 0 1 200px;">
+                    <div class="schema-item-title">MENACE</div>
+                    <div class="schema-item-content">Élément externe</div>
                 </div>
-                
-                <h3>Principe fondamental</h3>
-                <div class="info-box">
-                    <ul>
-                        <li>Toute entreprise/organisation portant un <strong>projet</strong> accepte nécessairement de s'exposer à un certain niveau de risque</li>
-                        <li>La sécurité ≠ élimination pure et simple de la totalité des risques</li>
-                        <li>La sécurité = <strong>maîtrise du niveau de risque nécessaire</strong></li>
-                        <li><strong>Sans risque, pas de projet !</strong></li>
-                    </ul>
+                <span style="font-size: 2em; font-weight: bold; color: #667eea;">×</span>
+                <div class="schema-item" style="flex: 0 1 200px;">
+                    <div class="schema-item-title">VULNÉRABILITÉ</div>
+                    <div class="schema-item-content">Élément interne</div>
                 </div>
-                
-                <h3>Cadre juridique</h3>
-                <p>Le cadre juridique tend à faire porter la <strong>responsabilité de la sécurité</strong> aux organisations et à leurs dirigeants.</p>
-                <p>La sécurité de l'employé est liée à la responsabilité de l'employeur.</p>
+                <span style="font-size: 2em; font-weight: bold; color: #667eea;">=</span>
+                <div class="schema-item" style="flex: 0 1 200px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="schema-item-title" style="color: white;">RISQUE</div>
+                </div>
             </div>
-            
-            <!-- Section 3: Spécificités internationales -->
-            <div class="section">
-                <h2>3. SÉCURITÉ À L'INTERNATIONAL : SPÉCIFICITÉS</h2>
-                
-                <p>La maîtrise du niveau de risque est rendue plus complexe par :</p>
-                
-                <div class="strategy-grid">
-                    <div class="strategy-card" style="border-top: 4px solid #ff6b6b;">
-                        <h3>1. ÉLOIGNEMENT GÉOGRAPHIQUE</h3>
-                        <p><strong>Distance physique :</strong></p>
-                        <ul>
-                            <li>300 km en France ≠ 300 km dans les Andes boliviennes</li>
-                            <li>Rapport temps/distance très inégal</li>
-                        </ul>
-                        <p><strong>Distance perceptuelle :</strong></p>
-                        <ul>
-                            <li>Les technologies créent un décalage de perception</li>
-                            <li>La facilité de communication fait oublier les réalités physiques</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="strategy-card" style="border-top: 4px solid #feca57;">
-                        <h3>2. DIVERSITÉ DES MENACES</h3>
-                        <ul>
-                            <li>Contextes politiques instables</li>
-                            <li>Risques sanitaires différents</li>
-                            <li>Criminalité locale</li>
-                            <li>Catastrophes naturelles spécifiques</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="strategy-card" style="border-top: 4px solid #ee5a6f;">
-                        <h3>3. VULNÉRABILITÉ ACCRUE</h3>
-                        <ul>
-                            <li>Manque de préparation aux risques locaux</li>
-                            <li>Perte des repères habituels</li>
-                            <li>Méconnaissance des codes culturels</li>
-                            <li>Environnements nouveaux = risques inédits</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="strategy-card" style="border-top: 4px solid #667eea;">
-                        <h3>4. MOYENS D'ACTION LIMITÉS</h3>
-                        <ul>
-                            <li>Dépendance aux acteurs locaux</li>
-                            <li>Ressources limitées sur place</li>
-                            <li>Délais de réaction plus longs</li>
-                            <li>Pouvoir de contrôle réduit</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="strategy-card" style="border-top: 4px solid #764ba2;">
-                        <h3>5. CADRE JURIDIQUE INCERTAIN</h3>
-                        <ul>
-                            <li>À la fois plus contraignant et plus incertain</li>
-                            <li>Contexte peut changer très rapidement</li>
-                            <li>Changements parfois non démocratiques</li>
-                            <li>Difficulté à rebondir rapidement</li>
-                        </ul>
-                    </div>
+        </div>
+        
+        <div class="highlight-box">
+            <strong>Point clé :</strong> Un risque n'existe que lorsqu'une menace rencontre une vulnérabilité. Si l'un des deux est à zéro, il n'y a pas de danger.
+        </div>
+        
+        <h3>Sécurité vs Insécurité</h3>
+        <p><strong>Sécurité</strong> = État dans lequel le niveau de risque est réduit à son minimum</p>
+        <ul>
+            <li>Si forte menace MAIS pas de vulnérabilité = PAS de danger</li>
+            <li>Si forte vulnérabilité MAIS pas de menace = PAS de danger</li>
+            <li>Se concentrer sur les <strong>risques réels</strong> (ni menace ni vulnérabilité à zéro)</li>
+            <li>Plus ces deux variables augmentent, plus il y a d'insécurité</li>
+        </ul>
+        
+        <h3>Deux types de sécurité</h3>
+        <div class="schema-grid">
+            <div class="schema-item">
+                <div class="schema-item-title">Sécurité Objective</div>
+                <div class="schema-item-content">État réel de la sécurité</div>
+            </div>
+            <div class="schema-item">
+                <div class="schema-item-title">Sécurité Subjective</div>
+                <div class="schema-item-content">
+                    <p>État perçu (sentiment)</p>
+                    <p style="margin-top: 0.5rem;"><strong>Important :</strong> La perception impacte la sécurité objective car on agit selon notre subjectivité</p>
                 </div>
-                
-                <h3>Deux objectifs de maîtrise du risque</h3>
-                
-                <div class="diagram">
-                    <h4>A. Amélioration de la sécurité objective</h4>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 2: Sécurité des organisations -->
+    <section id="securite-organisations">
+        <h2>2. SÉCURITÉ DES ORGANISATIONS</h2>
+        
+        <h3>Objectif</h3>
+        <p><strong>Réduction maximum du niveau de risque auquel sont exposés :</strong></p>
+        <div class="highlight-box">
+            <ol style="font-size: 1.1em; line-height: 2;">
+                <li>L'organisation et ses dirigeants</li>
+                <li>Son patrimoine matériel et financier</li>
+                <li>Ses personnels</li>
+                <li>Les tiers (clients, fournisseurs, sous-traitants, partenaires)</li>
+            </ol>
+        </div>
+        
+        <h3>Principe fondamental</h3>
+        <div class="highlight-box">
+            <ul>
+                <li>Toute entreprise/organisation portant un <strong>projet</strong> accepte nécessairement de s'exposer à un certain niveau de risque</li>
+                <li>La sécurité ≠ élimination pure et simple de la totalité des risques</li>
+                <li>La sécurité = <strong>maîtrise du niveau de risque nécessaire</strong></li>
+                <li><strong>Sans risque, pas de projet !</strong></li>
+            </ul>
+        </div>
+        
+        <h3>Cadre juridique</h3>
+        <p>Le cadre juridique tend à faire porter la <strong>responsabilité de la sécurité</strong> aux organisations et à leurs dirigeants.</p>
+        <p>La sécurité de l'employé est liée à la responsabilité de l'employeur.</p>
+    </section>
+    
+    <!-- Section 3: Spécificités internationales -->
+    <section id="specificites-internationales">
+        <h2>3. SÉCURITÉ À L'INTERNATIONAL : SPÉCIFICITÉS</h2>
+        
+        <p>La maîtrise du niveau de risque est rendue plus complexe par :</p>
+        
+        <div class="info-cards">
+            <div class="info-card" style="border-left-color: #ff6b6b;">
+                <div class="info-card-icon">📍</div>
+                <div class="info-card-title">1. ÉLOIGNEMENT GÉOGRAPHIQUE</div>
+                <div class="info-card-content">
+                    <p><strong>Distance physique :</strong></p>
                     <ul>
-                        <li>Diminution du <strong>nombre</strong> d'incidents</li>
-                        <li>Diminution de la <strong>fréquence</strong> des incidents</li>
-                        <li>Diminution de l'<strong>impact</strong> des incidents</li>
+                        <li>300 km en France ≠ 300 km dans les Andes boliviennes</li>
+                        <li>Rapport temps/distance très inégal</li>
                     </ul>
-                    
-                    <h4>B. Amélioration de la sécurité subjective</h4>
+                    <p><strong>Distance perceptuelle :</strong></p>
                     <ul>
-                        <li>Responsabilité de prendre en considération les collaborateurs, fournisseurs, etc.</li>
-                        <li><strong>Communication efficace</strong> sur les projets mis en place</li>
-                        <li><strong>Inclusion des personnels</strong> dans la mise en œuvre de la politique de sécurité</li>
+                        <li>Les technologies créent un décalage de perception</li>
+                        <li>La facilité de communication fait oublier les réalités physiques</li>
                     </ul>
                 </div>
             </div>
             
-            <!-- Section 4: Cadre juridique -->
-            <div class="section">
-                <h2>4. LE CADRE JURIDIQUE EN FRANCE</h2>
-                
-                <h3>Nature de l'obligation</h3>
-                <p>En France, la sécurité en entreprise est une <strong>obligation légale</strong> :</p>
-                <ul>
-                    <li>Obligation de <strong>moyens</strong></li>
-                    <li>Obligation de <strong>résultat</strong></li>
-                </ul>
-                
-                <div class="warning-box">
-                    <h3>Arrêt Amiante (2002) - Jurisprudence fondatrice</h3>
-                    <p style="font-style: italic; margin: 10px 0;">
-                        "En vertu du contrat de travail le liant à son salarié, l'employeur est tenu envers celui-ci d'une <strong>obligation de sécurité de résultat</strong>. Le manquement à cette obligation a le caractère d'une <strong>faute inexcusable</strong> lorsque l'employeur avait ou aurait dû avoir conscience du danger auquel était exposé le salarié, et qu'il n'a pas pris les mesures nécessaires pour l'en préserver."
-                    </p>
-                    <p><strong>Cette obligation est valable pour tous les acteurs.</strong></p>
-                </div>
-                
-                <h3>Code du Travail - Article L4121</h3>
-                
-                <div class="info-box">
-                    <h4>Principe général</h4>
-                    <p style="font-style: italic;">
-                        "L'employeur prend les mesures nécessaires pour assurer la sécurité et protéger la santé physique et <strong>morale</strong> des travailleurs."
-                    </p>
-                    
-                    <h4 style="margin-top: 20px;">Ces mesures comprennent :</h4>
-                    <ol>
-                        <li>Des actions de <strong>prévention</strong> des risques professionnels et de la pénibilité au travail</li>
-                        <li>Des actions d'<strong>information</strong> et de <strong>formation</strong></li>
-                        <li>La mise en place d'une <strong>organisation</strong> et de <strong>moyens adaptés</strong></li>
-                    </ol>
-                </div>
-                <h3>Les 9 principes généraux de prévention</h3>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th style="width: 10%;">N°</th>
-                            <th>Principe</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>1</strong></td>
-                            <td><strong>ÉVITER</strong> les risques dès lors qu'ils ne sont pas nécessaires au projet</td>
-                        </tr>
-                        <tr>
-                            <td><strong>2</strong></td>
-                            <td><strong>ÉVALUER</strong> les risques qui ne peuvent pas être évités (mise en relation menaces/vulnérabilités)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>3</strong></td>
-                            <td><strong>COMBATTRE</strong> les risques à la source (anticipation et prévention)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>4</strong></td>
-                            <td><strong>ADAPTER</strong> le travail à l'homme (conception des postes, équipements, méthodes) pour limiter travail monotone/cadencé et réduire leurs effets sur la santé</td>
-                        </tr>
-                        <tr>
-                            <td><strong>5</strong></td>
-                            <td><strong>TENIR COMPTE</strong> de l'état d'évolution de la technique</td>
-                        </tr>
-                        <tr>
-                            <td><strong>6</strong></td>
-                            <td><strong>REMPLACER</strong> ce qui est dangereux par ce qui ne l'est pas ou l'est moins</td>
-                        </tr>
-                        <tr>
-                            <td><strong>7</strong></td>
-                            <td><strong>PLANIFIER</strong> la prévention (approche cohérente intégrant technique, organisation, conditions de travail, relations sociales, facteurs ambiants, harcèlement moral défini à l'article L1152-1)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>8</strong></td>
-                            <td><strong>PRIORISER</strong> les mesures de protection collective sur les mesures individuelles</td>
-                        </tr>
-                        <tr>
-                            <td><strong>9</strong></td>
-                            <td><strong>DONNER</strong> les instructions appropriées aux travailleurs (traçabilité obligatoire)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <!-- Section 5: Responsabilités -->
-            <div class="section">
-                <h2>5. RESPONSABILITÉ DE L'EMPLOYEUR</h2>
-                
-                <h3>A. Obligation d'avoir connaissance du danger</h3>
-                
-                <div class="diagram">
-                    <h4>Le danger peut se déduire de :</h4>
+            <div class="info-card" style="border-left-color: #feca57;">
+                <div class="info-card-icon">⚠️</div>
+                <div class="info-card-title">2. DIVERSITÉ DES MENACES</div>
+                <div class="info-card-content">
                     <ul>
-                        <li><strong>Prescriptions légales</strong> (réglementations)</li>
-                        <li><strong>Conditions et charge de travail</strong></li>
-                        <li><strong>L'entreprise elle-même</strong> (taille, activité, tâche du salarié) → "présomption" de connaissance du danger</li>
+                        <li>Contextes politiques instables</li>
+                        <li>Risques sanitaires différents</li>
+                        <li>Criminalité locale</li>
+                        <li>Catastrophes naturelles spécifiques</li>
                     </ul>
-                </div>
-                
-                <div class="highlight-box">
-                    <h4>À l'étranger, l'appréciation de cette connaissance doit prendre en compte :</h4>
-                    <ul>
-                        <li>Le contexte <strong>géopolitique, politique, social, économique</strong></li>
-                        <li>Les <strong>personnes elles-mêmes</strong> (confession, orientation sexuelle, situation familiale)</li>
-                        <li>Les <strong>craintes exprimées</strong> par le salarié et ses expériences passées</li>
-                        <li>Le <strong>contexte sanitaire</strong> et l'environnement naturel</li>
-                    </ul>
-                </div>
-                
-                <h3>B. Obligation de prendre des mesures de protection et de prévention</h3>
-                
-                <div class="warning-box">
-                    <h4>L'entreprise doit assurer l'effectivité de ces mesures :</h4>
-                    
-                    <table style="margin-top: 20px;">
-                        <thead>
-                            <tr>
-                                <th style="background: #f44336;">Situation</th>
-                                <th style="background: #f44336;">Responsabilité de l'employeur</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Sans réelle atteinte</strong></td>
-                                <td>Responsable même si le sentiment d'insécurité est le seul problème</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Attitude du salarié</strong></td>
-                                <td>Ne peut pas s'abriter derrière l'attitude d'un salarié</td>
-                            </tr>
-                            <tr>
-                                <td><strong>À l'étranger</strong></td>
-                                <td>Responsable même si les faits surviennent à l'étranger</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Hors temps de travail</strong></td>
-                                <td>Responsable même hors temps de travail et sans lien direct avec l'activité professionnelle</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Refus du salarié</strong></td>
-                                <td>Peut sanctionner le refus de suivre ses consignes (y compris restrictions de mouvement hors travail)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Rapatriement</strong></td>
-                                <td>Responsabilité de décider de rapatrier en temps utile (y compris suite à une rupture de contrat)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                
-                <h3>Que risque l'entreprise en cas de non-respect ?</h3>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Type de conséquence</th>
-                            <th>Détails</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Poursuites judiciaires</strong></td>
-                            <td>Conséquences civiles voire pénales</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Perte financière importante</strong></td>
-                            <td>Amendes, indemnisations</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Perte d'image / risque de réputation</strong></td>
-                            <td>Impact sur le long terme, conséquences durables</td>
-                        </tr>
-                        <tr>
-                            <td><strong>À l'étranger</strong></td>
-                            <td>Difficultés opérationnelles (problèmes de communication, délais) → augmentation de la vulnérabilité de l'organisation et de ses salariés</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <!-- Section 6: Les 3 types de risques -->
-            <div class="section">
-                <h2>6. LES 3 TYPES DE RISQUES À L'INTERNATIONAL</h2>
-                
-                <div class="risk-types">
-                    <div class="risk-type" style="border-top-color: #ff6b6b;">
-                        <h3>A. Risques liés à l'INDIVIDU</h3>
-                        <ul>
-                            <li>Déplacement</li>
-                            <li>Santé / Hygiène</li>
-                            <li>Équipement</li>
-                            <li>Agressions physiques / morales</li>
-                            <li>Attitudes personnelles</li>
-                            <li>Comportements à risque</li>
-                            <li>Risque interculturel</li>
-                            <li>Stress / Risques psychologiques</li>
-                            <li>Confidentialité</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="risk-type" style="border-top-color: #feca57;">
-                        <h3>B. Risques liés à la MISSION</h3>
-                        <ul>
-                            <li>Fonction et positionnement hiérarchique</li>
-                            <li>Employeur (nationalité, réputation)</li>
-                            <li>Image de l'entreprise</li>
-                            <li>Population (personnel local, bénéficiaires, partenaires)</li>
-                            <li>Conditions logistiques</li>
-                            <li>Contenu de la mission</li>
-                            <li>Corruption</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="risk-type" style="border-top-color: #667eea;">
-                        <h3>C. Risques PAYS / ENVIRONNEMENT</h3>
-                        <ul>
-                            <li>Environnement géopolitique</li>
-                            <li>Contexte politique, économique, social</li>
-                            <li>Contexte administratif</li>
-                            <li>Climat</li>
-                            <li>Catastrophes naturelles</li>
-                            <li>Infrastructures (transports, santé, communications)</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <h3>Statistiques clés - Risques liés à l'INDIVIDU</h3>
-                
-                <div class="warning-box">
-                    <ul>
-                        <li><strong>1ère cause de rapatriement/décès</strong> des expatriés : <strong>Accident de la route</strong> (les plus nombreux et fréquents)</li>
-                        <li><strong>2ème cause de rapatriement</strong> : <strong>Maladies</strong></li>
-                    </ul>
-                    <p style="margin-top: 15px;">Ces risques sont le produit d'une menace permanente mais relativement modérée rencontrant une vulnérabilité forte sur laquelle des mesures simples peuvent avoir un impact réel.</p>
-                </div>
-                <h3>Mesures préventives pour les risques INDIVIDU</h3>
-                
-                <div class="diagram">
-                    <h4>1. Préparation d'un déplacement</h4>
-                    <ul>
-                        <li><strong>Modalités :</strong> Choisir le bon moyen de transport</li>
-                        <li><strong>Itinéraires :</strong> Planifier les trajets les plus sûrs</li>
-                        <li><strong>Contrôle technique :</strong> Vérifier l'état des véhicules</li>
-                    </ul>
-                    
-                    <h4>2. Anticipation des besoins</h4>
-                    <ul>
-                        <li><strong>Vaccination :</strong> Obligatoires et recommandées</li>
-                        <li><strong>Kit d'hygiène/santé :</strong> Médicaments, premiers soins</li>
-                        <li><strong>Équipement de sécurité :</strong> Adapté aux risques locaux</li>
-                        <li><strong>Assurances :</strong> 
-                            <ul style="margin-left: 20px; margin-top: 5px;">
-                                <li>Prendre les assurances obligatoires</li>
-                                <li>Assurer les risques les plus importants pour les employés</li>
-                            </ul>
-                        </li>
-                        <li><strong>Principe de précaution :</strong> Alimentation, eau</li>
-                    </ul>
-                    
-                    <h4>3. Sensibilisation et formation</h4>
-                    <ul>
-                        <li>Former les collaborateurs à la meilleure façon de faire (la moins risquée)</li>
-                        <li>Prendre toutes les précautions possibles pour éviter tous les risques</li>
-                        <li>L'organisation doit donner des outils pour lutter contre le défaut d'information</li>
-                    </ul>
-                </div>
-                
-                <h3>Comportements inadéquats - Causes</h3>
-                
-                <div class="highlight-box">
-                    <p><strong>Ces risques sont souvent le résultat d'un comportement inadéquat, mais aussi liés à :</strong></p>
-                    
-                    <h4>1. Sentiment de liberté</h4>
-                    <ul>
-                        <li>Ressenti par l'individu éloigné de ses repères habituels</li>
-                        <li>Perte de contact avec sa famille</li>
-                        <li><em>Note : Ceux qui prennent de gros risques sont souvent ceux qui n'ont rien à perdre</em></li>
-                    </ul>
-                    
-                    <h4>2. Défaut d'information</h4>
-                    <ul>
-                        <li>Législation locale</li>
-                        <li>Interculturel</li>
-                        <li>S'informer correctement en amont ET pendant</li>
-                    </ul>
-                </div>
-                
-                <h3>Caractéristiques des risques liés à la MISSION</h3>
-                
-                <div class="info-box">
-                    <h4>Difficiles à identifier :</h4>
-                    <ul>
-                        <li>Souvent liés à des relations humaines face auxquelles l'individu concerné manque de recul (relations hiérarchiques, quotidiennes, affectives, financières, etc.)</li>
-                        <li>Les anticiper demande de l'expérience (compréhension du contexte) et une capacité d'analyse importante (rôle clé de l'information)</li>
-                    </ul>
-                    
-                    <h4>Se manifestent progressivement :</h4>
-                    <ul>
-                        <li>Il faut apprendre à déceler les <strong>"signaux faibles"</strong></li>
-                        <li>Il est parfois possible d'empêcher une situation en les remarquant</li>
-                        <li>Être observateur de tout le contexte pour détecter les anomalies</li>
-                        <li>Ne pas sur-réagir</li>
-                    </ul>
-                    
-                    <h4>Mesures préventives :</h4>
-                    <ul>
-                        <li>Favoriser une communication régulière et efficace sur le terrain et avec le siège</li>
-                        <li>Ne pas hésiter à faire appel à des intervenants extérieurs neutres pour évaluer la situation</li>
-                        <li>Gestion du stress, acceptation du changement, remise en question personnelle</li>
-                        <li>Anticiper via et respecter des procédures</li>
-                        <li>Bon sens</li>
-                        <li>Concertation (attention à l'isolement)</li>
-                    </ul>
-                </div>
-                
-                <h3>Caractéristiques des risques PAYS / ENVIRONNEMENT</h3>
-                
-                <div class="success-box">
-                    <h4>Nature des menaces :</h4>
-                    <ul>
-                        <li>Se réfèrent à des menaces globales dont l'individu ou l'entreprise n'est pas la cible principale (ex : tremblement de terre)</li>
-                        <li>Potentiellement imprévisibles (mais possibilité d'anticipation - ex : émeute)</li>
-                        <li>Risques exceptionnels → manque d'expérience des situations</li>
-                        <li>Risques pouvant avoir des conséquences majeures dues à l'échelle de l'environnement (macro)</li>
-                    </ul>
-                    
-                    <h4>Moyens d'action :</h4>
-                    <ul>
-                        <li><strong>S'informer :</strong> accès et choix des sources (multiples et diverses), communication fluide et sécurisée</li>
-                        <li><strong>Se former :</strong> maîtriser des techniques et processus</li>
-                        <li>Varier les types de sources et les comparer (sites internet, personnes locales)</li>
-                        <li>Nécessite une remise en perspective</li>
-                    </ul>
-                </div>
-                
-                <h3>3 Mesures radicales pour les risques PAYS</h3>
-                
-                <div class="strategy-grid">
-                    <div class="strategy-card" style="border-top: 4px solid #667eea;">
-                        <h3>1. HIBERNATION</h3>
-                        <p><strong>Définition :</strong> Phase de mise à l'abri d'un certain temps pendant laquelle on reste en communication avec les décideurs</p>
-                        <p><strong>Objectif :</strong> Attendre un ordre d'évacuation éventuelle</p>
-                        <p><strong>Situations :</strong> Catastrophes naturelles, catastrophes sécuritaires</p>
-                        <p><strong>Préparation nécessaire :</strong> Repli sécuritaire</p>
-                    </div>
-                    
-                    <div class="strategy-card" style="border-top: 4px solid #f57c00;">
-                        <h3>2. ÉVACUATION</h3>
-                        <p><strong>Définition :</strong> Mesure radicale de retrait du personnel</p>
-                        <p><strong>Caractère :</strong> Décision exceptionnelle</p>
-                        <p><strong>Conséquences :</strong> Souvent irréversibles pour le projet</p>
-                    </div>
-                    
-                    <div class="strategy-card" style="border-top: 4px solid #388e3c;">
-                        <h3>3. ÉVITEMENT ET PROTECTION</h3>
-                        <p><strong>Définition :</strong> Renforcement des mesures de sécurité</p>
-                        <p><strong>Objectif :</strong> Maintenir l'activité en sécurité renforcée</p>
-                    </div>
                 </div>
             </div>
             
-            <!-- Section 7: Moments clés -->
-            <div class="section">
-                <h2>7. MOMENTS CLÉS D'UNE MISSION INTERNATIONALE</h2>
+            <div class="info-card" style="border-left-color: #ee5a6f;">
+                <div class="info-card-icon">🔓</div>
+                <div class="info-card-title">3. VULNÉRABILITÉ ACCRUE</div>
+                <div class="info-card-content">
+                    <ul>
+                        <li>Manque de préparation aux risques locaux</li>
+                        <li>Perte des repères habituels</li>
+                        <li>Méconnaissance des codes culturels</li>
+                        <li>Environnements nouveaux = risques inédits</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-card" style="border-left-color: #667eea;">
+                <div class="info-card-icon">🎯</div>
+                <div class="info-card-title">4. MOYENS D'ACTION LIMITÉS</div>
+                <div class="info-card-content">
+                    <ul>
+                        <li>Dépendance aux acteurs locaux</li>
+                        <li>Ressources limitées sur place</li>
+                        <li>Délais de réaction plus longs</li>
+                        <li>Pouvoir de contrôle réduit</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-card" style="border-left-color: #764ba2;">
+                <div class="info-card-icon">⚖️</div>
+                <div class="info-card-title">5. CADRE JURIDIQUE INCERTAIN</div>
+                <div class="info-card-content">
+                    <ul>
+                        <li>À la fois plus contraignant et plus incertain</li>
+                        <li>Contexte peut changer très rapidement</li>
+                        <li>Changements parfois non démocratiques</li>
+                        <li>Difficulté à rebondir rapidement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Deux objectifs de maîtrise du risque</h3>
+        
+        <div class="schema-box">
+            <h4>A. Amélioration de la sécurité objective</h4>
+            <ul>
+                <li>Diminution du <strong>nombre</strong> d'incidents</li>
+                <li>Diminution de la <strong>fréquence</strong> des incidents</li>
+                <li>Diminution de l'<strong>impact</strong> des incidents</li>
+            </ul>
+            
+            <h4 style="margin-top: 2rem;">B. Amélioration de la sécurité subjective</h4>
+            <ul>
+                <li>Responsabilité de prendre en considération les collaborateurs, fournisseurs, etc.</li>
+                <li><strong>Communication efficace</strong> sur les projets mis en place</li>
+                <li><strong>Inclusion des personnels</strong> dans la mise en œuvre de la politique de sécurité</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Section 4: Cadre juridique -->
+    <section id="cadre-juridique">
+        <h2>4. LE CADRE JURIDIQUE EN FRANCE</h2>
+        
+        <h3>Nature de l'obligation</h3>
+        <p>En France, la sécurité en entreprise est une <strong>obligation légale</strong> :</p>
+        <ul>
+            <li>Obligation de <strong>moyens</strong></li>
+            <li>Obligation de <strong>résultat</strong></li>
+        </ul>
+        
+        <div class="highlight-box" style="background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%); border-left-color: #f44336;">
+            <h3 style="color: #c62828;">Arrêt Amiante (2002) - Jurisprudence fondatrice</h3>
+            <p style="font-style: italic; margin: 10px 0; color: #424242;">
+                "En vertu du contrat de travail le liant à son salarié, l'employeur est tenu envers celui-ci d'une <strong>obligation de sécurité de résultat</strong>. Le manquement à cette obligation a le caractère d'une <strong>faute inexcusable</strong> lorsque l'employeur avait ou aurait dû avoir conscience du danger auquel était exposé le salarié, et qu'il n'a pas pris les mesures nécessaires pour l'en préserver."
+            </p>
+            <p><strong>Cette obligation est valable pour tous les acteurs.</strong></p>
+        </div>
+        
+        <h3>Code du Travail - Article L4121</h3>
+        
+        <div class="highlight-box">
+            <h4>Principe général</h4>
+            <p style="font-style: italic;">
+                "L'employeur prend les mesures nécessaires pour assurer la sécurité et protéger la santé physique et <strong>morale</strong> des travailleurs."
+            </p>
+            
+            <h4 style="margin-top: 20px;">Ces mesures comprennent :</h4>
+            <ol>
+                <li>Des actions de <strong>prévention</strong> des risques professionnels et de la pénibilité au travail</li>
+                <li>Des actions d'<strong>information</strong> et de <strong>formation</strong></li>
+                <li>La mise en place d'une <strong>organisation</strong> et de <strong>moyens adaptés</strong></li>
+            </ol>
+        </div>
+
+        <h3>Les 9 principes généraux de prévention</h3>
+        
+        <table style="width: 100%; margin: 2rem 0; border-collapse: collapse;">
+            <thead>
+                <tr style="background-color: #667eea; color: white;">
+                    <th style="padding: 1rem; width: 10%; text-align: left;">N°</th>
+                    <th style="padding: 1rem; text-align: left;">Principe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #f8f9fa;">
+                    <td style="padding: 1rem;"><strong>1</strong></td>
+                    <td style="padding: 1rem;"><strong>ÉVITER</strong> les risques dès lors qu'ils ne sont pas nécessaires au projet</td>
+                </tr>
+                <tr>
+                    <td style="padding: 1rem;"><strong>2</strong></td>
+                    <td style="padding: 1rem;"><strong>ÉVALUER</strong> les risques qui ne peuvent pas être évités (mise en relation menaces/vulnérabilités)</td>
+                </tr>
+                <tr style="background-color: #f8f9fa;">
+                    <td style="padding: 1rem;"><strong>3</strong></td>
+                    <td style="padding: 1rem;"><strong>COMBATTRE</strong> les risques à la source (anticipation et prévention)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 1rem;"><strong>4</strong></td>
+                    <td style="padding: 1rem;"><strong>ADAPTER</strong> le travail à l'homme (conception des postes, équipements, méthodes) pour limiter travail monotone/cadencé et réduire leurs effets sur la santé</td>
+                </tr>
+                <tr style="background-color: #f8f9fa;">
+                    <td style="padding: 1rem;"><strong>5</strong></td>
+                    <td style="padding: 1rem;"><strong>TENIR COMPTE</strong> de l'état d'évolution de la technique</td>
+                </tr>
+                <tr>
+                    <td style="padding: 1rem;"><strong>6</strong></td>
+                    <td style="padding: 1rem;"><strong>REMPLACER</strong> ce qui est dangereux par ce qui ne l'est pas ou l'est moins</td>
+                </tr>
+                <tr style="background-color: #f8f9fa;">
+                    <td style="padding: 1rem;"><strong>7</strong></td>
+                    <td style="padding: 1rem;"><strong>PLANIFIER</strong> la prévention (approche cohérente intégrant technique, organisation, conditions de travail, relations sociales, facteurs ambiants, harcèlement moral défini à l'article L1152-1)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 1rem;"><strong>8</strong></td>
+                    <td style="padding: 1rem;"><strong>PRIORISER</strong> les mesures de protection collective sur les mesures individuelles</td>
+                </tr>
+                <tr style="background-color: #f8f9fa;">
+                    <td style="padding: 1rem;"><strong>9</strong></td>
+                    <td style="padding: 1rem;"><strong>DONNER</strong> les instructions appropriées aux travailleurs (traçabilité obligatoire)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- Section 5: Responsabilités -->
+    <section id="responsabilites">
+        <h2>5. RESPONSABILITÉ DE L'EMPLOYEUR</h2>
+        
+            <h3>A. Obligation d'avoir connaissance du danger</h3>
+        
+        <div class="schema-box">
+            <h4>Le danger peut se déduire de :</h4>
+            <ul>
+                <li><strong>Prescriptions légales</strong> (réglementations)</li>
+                <li><strong>Conditions et charge de travail</strong></li>
+                <li><strong>L'entreprise elle-même</strong> (taille, activité, tâche du salarié) → "présomption" de connaissance du danger</li>
+            </ul>
+        </div>
+        
+        <div class="highlight-box">
+            <h4>À l'étranger, l'appréciation de cette connaissance doit prendre en compte :</h4>
+            <ul>
+                <li>Le contexte <strong>géopolitique, politique, social, économique</strong></li>
+                <li>Les <strong>personnes elles-mêmes</strong> (confession, orientation sexuelle, situation familiale)</li>
+                <li>Les <strong>craintes exprimées</strong> par le salarié et ses expériences passées</li>
+                <li>Le <strong>contexte sanitaire</strong> et l'environnement naturel</li>
+            </ul>
+        </div>
+        
+        <h3>B. Obligation de prendre des mesures de protection et de prévention</h3>
+        
+        <div class="highlight-box" style="background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%); border-left-color: #f44336;">
+            <h4>L'entreprise doit assurer l'effectivité de ces mesures :</h4>
+            
+            <table style="margin-top: 20px; width: 100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="background-color: #f44336; color: white;">
+                        <th style="padding: 1rem; text-align: left;">Situation</th>
+                        <th style="padding: 1rem; text-align: left;">Responsabilité de l'employeur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #fff;">
+                        <td style="padding: 1rem;"><strong>Sans réelle atteinte</strong></td>
+                        <td style="padding: 1rem;">Responsable même si le sentiment d'insécurité est le seul problème</td>
+                    </tr>
+                    <tr style="background-color: #f8f9fa;">
+                        <td style="padding: 1rem;"><strong>Attitude du salarié</strong></td>
+                        <td style="padding: 1rem;">Ne peut pas s'abriter derrière l'attitude d'un salarié</td>
+                    </tr>
+                    <tr style="background-color: #fff;">
+                        <td style="padding: 1rem;"><strong>À l'étranger</strong></td>
+                        <td style="padding: 1rem;">Responsable même si les faits surviennent à l'étranger</td>
+                    </tr>
+                    <tr style="background-color: #f8f9fa;">
+                        <td style="padding: 1rem;"><strong>Hors temps de travail</strong></td>
+                        <td style="padding: 1rem;">Responsable même hors temps de travail et sans lien direct avec l'activité professionnelle</td>
+                    </tr>
+                    <tr style="background-color: #fff;">
+                        <td style="padding: 1rem;"><strong>Refus du salarié</strong></td>
+                        <td style="padding: 1rem;">Peut sanctionner le refus de suivre ses consignes (y compris restrictions de mouvement hors travail)</td>
+                    </tr>
+                    <tr style="background-color: #f8f9fa;">
+                        <td style="padding: 1rem;"><strong>Rapatriement</strong></td>
+                        <td style="padding: 1rem;">Responsabilité de décider de rapatrier en temps utile (y compris suite à une rupture de contrat)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h3>Que risque l'entreprise en cas de non-respect ?</h3>
+        
+        <table style="width: 100%; margin: 2rem 0; border-collapse: collapse;">
+            <thead>
+                <tr style="background-color: #667eea; color: white;">
+                    <th style="padding: 1rem; text-align: left;">Type de conséquence</th>
+                    <th style="padding: 1rem; text-align: left;">Détails</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: #f8f9fa;">
+                    <td style="padding: 1rem;"><strong>Poursuites judiciaires</strong></td>
+                    <td style="padding: 1rem;">Conséquences civiles voire pénales</td>
+                </tr>
+                <tr>
+                    <td style="padding: 1rem;"><strong>Perte financière importante</strong></td>
+                    <td style="padding: 1rem;">Amendes, indemnisations</td>
+                </tr>
+                <tr style="background-color: #f8f9fa;">
+                    <td style="padding: 1rem;"><strong>Perte d'image / risque de réputation</strong></td>
+                    <td style="padding: 1rem;">Impact sur le long terme, conséquences durables</td>
+                </tr>
+                <tr>
+                    <td style="padding: 1rem;"><strong>À l'étranger</strong></td>
+                    <td style="padding: 1rem;">Difficultés opérationnelles (problèmes de communication, délais) → augmentation de la vulnérabilité de l'organisation et de ses salariés</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- Section 6: Les 3 types de risques -->
+    <section id="types-risques">
+        <h2>6. LES 3 TYPES DE RISQUES À L'INTERNATIONAL</h2>
+        
+        <div class="info-cards">
+            <div class="info-card" style="border-left-color: #ff6b6b;">
+                <div class="info-card-icon">👤</div>
+                <div class="info-card-title">A. Risques liés à l'INDIVIDU</div>
+                <div class="info-card-content">
+                    <ul>
+                        <li>Déplacement</li>
+                        <li>Santé / Hygiène</li>
+                        <li>Équipement</li>
+                        <li>Agressions physiques / morales</li>
+                        <li>Attitudes personnelles</li>
+                        <li>Comportements à risque</li>
+                        <li>Risque interculturel</li>
+                        <li>Stress / Risques psychologiques</li>
+                        <li>Confidentialité</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-card" style="border-left-color: #feca57;">
+                <div class="info-card-icon">💼</div>
+                <div class="info-card-title">B. Risques liés à la MISSION</div>
+                <div class="info-card-content">
+                    <ul>
+                        <li>Fonction et positionnement hiérarchique</li>
+                        <li>Employeur (nationalité, réputation)</li>
+                        <li>Image de l'entreprise</li>
+                        <li>Population (personnel local, bénéficiaires, partenaires)</li>
+                        <li>Conditions logistiques</li>
+                        <li>Contenu de la mission</li>
+                        <li>Corruption</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-card" style="border-left-color: #667eea;">
+                <div class="info-card-icon">🌍</div>
+                <div class="info-card-title">C. Risques PAYS / ENVIRONNEMENT</div>
+                <div class="info-card-content">
+                    <ul>
+                        <li>Environnement géopolitique</li>
+                        <li>Contexte politique, économique, social</li>
+                        <li>Contexte administratif</li>
+                        <li>Climat</li>
+                        <li>Catastrophes naturelles</li>
+                        <li>Infrastructures (transports, santé, communications)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Statistiques clés - Risques liés à l'INDIVIDU</h3>
+        
+        <div class="highlight-box" style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left-color: #f57c00;">
+            <ul>
+                <li><strong>1ère cause de rapatriement/décès</strong> des expatriés : <strong>Accident de la route</strong> (les plus nombreux et fréquents)</li>
+                <li><strong>2ème cause de rapatriement</strong> : <strong>Maladies</strong></li>
+            </ul>
+            <p style="margin-top: 15px;">Ces risques sont le produit d'une menace permanente mais relativement modérée rencontrant une vulnérabilité forte sur laquelle des mesures simples peuvent avoir un impact réel.</p>
+        </div>
+
+        <h3>Mesures préventives pour les risques INDIVIDU</h3>
+        
+        <div class="schema-box">
+            <h4>1. Préparation d'un déplacement</h4>
+            <ul>
+                <li><strong>Modalités :</strong> Choisir le bon moyen de transport</li>
+                <li><strong>Itinéraires :</strong> Planifier les trajets les plus sûrs</li>
+                <li><strong>Contrôle technique :</strong> Vérifier l'état des véhicules</li>
+            </ul>
+            
+            <h4 style="margin-top: 2rem;">2. Anticipation des besoins</h4>
+            <ul>
+                <li><strong>Vaccination :</strong> Obligatoires et recommandées</li>
+                <li><strong>Kit d'hygiène/santé :</strong> Médicaments, premiers soins</li>
+                <li><strong>Équipement de sécurité :</strong> Adapté aux risques locaux</li>
+                <li><strong>Assurances :</strong> 
+                    <ul style="margin-left: 20px; margin-top: 5px;">
+                        <li>Prendre les assurances obligatoires</li>
+                        <li>Assurer les risques les plus importants pour les employés</li>
+                    </ul>
+                </li>
+                <li><strong>Principe de précaution :</strong> Alimentation, eau</li>
+            </ul>
+            
+            <h4 style="margin-top: 2rem;">3. Sensibilisation et formation</h4>
+            <ul>
+                <li>Former les collaborateurs à la meilleure façon de faire (la moins risquée)</li>
+                <li>Prendre toutes les précautions possibles pour éviter tous les risques</li>
+                <li>L'organisation doit donner des outils pour lutter contre le défaut d'information</li>
+            </ul>
+        </div>
+        
+        <h3>Comportements inadéquats - Causes</h3>
+        
+        <div class="highlight-box">
+            <p><strong>Ces risques sont souvent le résultat d'un comportement inadéquat, mais aussi liés à :</strong></p>
+            
+            <h4>1. Sentiment de liberté</h4>
+            <ul>
+                <li>Ressenti par l'individu éloigné de ses repères habituels</li>
+                <li>Perte de contact avec sa famille</li>
+                <li><em>Note : Ceux qui prennent de gros risques sont souvent ceux qui n'ont rien à perdre</em></li>
+            </ul>
+            
+            <h4>2. Défaut d'information</h4>
+            <ul>
+                <li>Législation locale</li>
+                <li>Interculturel</li>
+                <li>S'informer correctement en amont ET pendant</li>
+            </ul>
+        </div>
+        
+        <h3>Caractéristiques des risques liés à la MISSION</h3>
+        
+        <div class="highlight-box">
+            <h4>Difficiles à identifier :</h4>
+            <ul>
+                <li>Souvent liés à des relations humaines face auxquelles l'individu concerné manque de recul (relations hiérarchiques, quotidiennes, affectives, financières, etc.)</li>
+                <li>Les anticiper demande de l'expérience (compréhension du contexte) et une capacité d'analyse importante (rôle clé de l'information)</li>
+            </ul>
+            
+            <h4>Se manifestent progressivement :</h4>
+            <ul>
+                <li>Il faut apprendre à déceler les <strong>"signaux faibles"</strong></li>
+                <li>Il est parfois possible d'empêcher une situation en les remarquant</li>
+                <li>Être observateur de tout le contexte pour détecter les anomalies</li>
+                <li>Ne pas sur-réagir</li>
+            </ul>
+            
+            <h4>Mesures préventives :</h4>
+            <ul>
+                <li>Favoriser une communication régulière et efficace sur le terrain et avec le siège</li>
+                <li>Ne pas hésiter à faire appel à des intervenants extérieurs neutres pour évaluer la situation</li>
+                <li>Gestion du stress, acceptation du changement, remise en question personnelle</li>
+                <li>Anticiper via et respecter des procédures</li>
+                <li>Bon sens</li>
+                <li>Concertation (attention à l'isolement)</li>
+            </ul>
+        </div>
+        
+        <h3>Caractéristiques des risques PAYS / ENVIRONNEMENT</h3>
+        
+        <div class="highlight-box" style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left-color: #388e3c;">
+            <h4>Nature des menaces :</h4>
+            <ul>
+                <li>Se réfèrent à des menaces globales dont l'individu ou l'entreprise n'est pas la cible principale (ex : tremblement de terre)</li>
+                <li>Potentiellement imprévisibles (mais possibilité d'anticipation - ex : émeute)</li>
+                <li>Risques exceptionnels → manque d'expérience des situations </li>
+                                <li>Risques pouvant avoir des conséquences majeures dues à l'échelle de l'environnement (macro)</li>
+            </ul>
+            
+            <h4>Moyens d'action :</h4>
+            <ul>
+                <li><strong>S'informer :</strong> accès et choix des sources (multiples et diverses), communication fluide et sécurisée</li>
+                <li><strong>Se former :</strong> maîtriser des techniques et processus</li>
+                <li>Varier les types de sources et les comparer (sites internet, personnes locales)</li>
+                <li>Nécessite une remise en perspective</li>
+            </ul>
+        </div>
+        
+        <h3>3 Mesures radicales pour les risques PAYS</h3>
+        
+        <div class="schema-grid">
+            <div class="schema-item" style="border-left: 4px solid #667eea;">
+                <div class="schema-item-title">1. HIBERNATION</div>
+                <div class="schema-item-content">
+                    <p><strong>Définition :</strong> Phase de mise à l'abri d'un certain temps pendant laquelle on reste en communication avec les décideurs</p>
+                    <p><strong>Objectif :</strong> Attendre un ordre d'évacuation éventuelle</p>
+                    <p><strong>Situations :</strong> Catastrophes naturelles, catastrophes sécuritaires</p>
+                    <p><strong>Préparation nécessaire :</strong> Repli sécuritaire</p>
+                </div>
+            </div>
+            
+            <div class="schema-item" style="border-left: 4px solid #f57c00;">
+                <div class="schema-item-title">2. ÉVACUATION</div>
+                <div class="schema-item-content">
+                    <p><strong>Définition :</strong> Mesure radicale de retrait du personnel</p>
+                    <p><strong>Caractère :</strong> Décision exceptionnelle</p>
+                    <p><strong>Conséquences :</strong> Souvent irréversibles pour le projet</p>
+                </div>
+            </div>
+            
+            <div class="schema-item" style="border-left: 4px solid #388e3c;">
+                <div class="schema-item-title">3. ÉVITEMENT ET PROTECTION</div>
+                <div class="schema-item-content">
+                    <p><strong>Définition :</strong> Renforcement des mesures de sécurité</p>
+                    <p><strong>Objectif :</strong> Maintenir l'activité en sécurité renforcée</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 7: Moments clés -->
+    <section id="moments-cles">
+        <h2>7. MOMENTS CLÉS D'UNE MISSION INTERNATIONALE</h2>
+        
+        <h3>Pour l'INDIVIDU</h3>
+        
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="timeline-event">
+                    <div class="timeline-date">Étape 1</div>
+                    <div class="timeline-event-content">
+                        <h3 class="timeline-event-title">L'ARRIVÉE</h3>
+                        <p class="timeline-event-description"><strong>Organisation d'un accueil</strong><br>
+                        Les individus sont très précautionneux à l'arrivée, les risques sont modérés</p>
+                    </div>
+                </div>
                 
-                <h3>Pour l'INDIVIDU</h3>
-                
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>1. L'ARRIVÉE</h3>
-                            <p><strong>Organisation d'un accueil</strong></p>
-                            <p>Les individus sont très précautionneux à l'arrivée, les risques sont modérés</p>
+                <div class="timeline-event">
+                    <div class="timeline-date">⚠️ Étape 2</div>
+                    <div class="timeline-event-content">
+                        <h3 class="timeline-event-title">PHASE DE RELÂCHEMENT</h3>
+                        <p class="timeline-event-description"><strong style="color: #f44336;">PÉRIODE CRITIQUE</strong><br>
+                        Après quelque temps, on se relâche et on prend inconsciemment des risques</p>
+                        <div class="timeline-event-tags">
+                            <span class="timeline-tag" style="background: #f44336;">Attention : baisse de vigilance</span>
                         </div>
                     </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>2. PHASE DE RELÂCHEMENT</h3>
-                            <p><strong>PÉRIODE CRITIQUE</strong></p>
-                            <p>Après quelque temps, on se relâche et on prend inconsciemment des risques</p>
-                            <p style="color: #f44336; font-weight: bold;">Attention : baisse de vigilance après quelques semaines</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>3. LES DERNIERS MOMENTS</h3>
-                            <p><strong>Période critique</strong></p>
-                            <p>Moment où l'on peut baisser la garde en pensant que la mission est terminée</p>
-                        </div>
-                    </div>
                 </div>
                 
-                <h3>Pour le PROJET</h3>
-                
-                <div class="diagram">
-                    <ol style="font-size: 1.1em; line-height: 2;">
-                        <li><strong>Le lancement</strong></li>
-                        <li><strong>Les changements visibles</strong> (Changements RH, changements de lieux d'intervention)</li>
-                        <li><strong>La "fin d'un cycle"</strong></li>
-                    </ol>
-                    
-                    <div class="warning-box" style="margin-top: 20px;">
-                        <p><strong>Ces moments nécessitent une réévaluation des risques.</strong></p>
+                <div class="timeline-event">
+                    <div class="timeline-date">Étape 3</div>
+                    <div class="timeline-event-content">
+                        <h3 class="timeline-event-title">LES DERNIERS MOMENTS</h3>
+                        <p class="timeline-event-description"><strong>Période critique</strong><br>
+                        Moment où l'on peut baisser la garde en pensant que la mission est terminée</p>
                     </div>
                 </div>
-                
-                <h3>Moments clés pour anticiper le risque PAYS</h3>
-                
-                <div class="highlight-box">
-                    <ul>
-                        <li><strong>La préparation de la mission (avant le départ)</strong> est obligatoire</li>
-                        <li><strong>Une vigilance permanente</strong> tout au long de la mission</li>
+            </div>
+        </div>
+        
+        <h3>Pour le PROJET</h3>
+        
+        <div class="schema-box">
+            <ol style="font-size: 1.1em; line-height: 2;">
+                <li><strong>Le lancement</strong></li>
+                <li><strong>Les changements visibles</strong> (Changements RH, changements de lieux d'intervention)</li>
+                <li><strong>La "fin d'un cycle"</strong></li>
+            </ol>
+            
+            <div class="highlight-box" style="margin-top: 20px; background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left-color: #f57c00;">
+                <p><strong>Ces moments nécessitent une réévaluation des risques.</strong></p>
+            </div>
+        </div>
+        
+        <h3>Moments clés pour anticiper le risque PAYS</h3>
+        
+        <div class="highlight-box">
+            <ul>
+                <li><strong>La préparation de la mission (avant le départ)</strong> est obligatoire</li>
+                <li><strong>Une vigilance permanente</strong> tout au long de la mission</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Section 8: Les 4 stratégies -->
+    <section id="strategies">
+        <h2>8. LES 4 STRATÉGIES DU RISK MANAGEMENT</h2>
+        
+        <p>Les entreprises appliquent traditionnellement quatre stratégies :</p>
+        
+        <div class="schema-grid">
+            <div class="schema-item">
+                <div class="schema-item-title">1. ÉVITEMENT</div>
+                <div class="schema-item-content">
+                    <p><strong>Définition :</strong> Éviter complètement le risque identifié</p>
+                    <p><strong>Exemple :</strong> Le risque est le déplacement → on ne se déplace pas quand c'est possible</p>
+                    <p><strong>Limite :</strong> Peut empêcher certains projets d'avancer</p>
+                </div>
+            </div>
+            
+            <div class="schema-item">
+                <div class="schema-item-title">2. ATTÉNUATION</div>
+                <div class="schema-item-content">
+                    <p><strong>Objectif :</strong> Rendre le risque moins probable ou réduire son impact</p>
+                    <p><strong>Mesures de prévention :</strong> Tout ce que l'on met en place pour éviter que le risque se matérialise (formation du personnel, etc.)</p>
+                    <p><strong>Mesures de protection :</strong> Ce que l'on met en place pour limiter les conséquences de la réalisation du risque quand il se produit</p>
+                </div>
+            </div>
+            
+            <div class="schema-item">
+                <div class="schema-item-title">3. RÉTENTION</div>
+                <div class="schema-item-content">
+                    <p><strong>Définition :</strong> Accepter le risque et assumer les conséquences</p>
+                    <p><strong>Quand :</strong> Le risque se produit lorsque les risques ont été évalués et que l'entreprise accepte de les prendre</p>
+                    <p>L'entreprise assume elle-même les conséquences</p>
+                </div>
+            </div>
+            
+            <div class="schema-item">
+                <div class="schema-item-title">4. TRANSFERT</div>
+                <div class="schema-item-content">
+                    <p><strong>Définition :</strong> Transfert des conséquences financières à un tiers</p>
+                    <p><strong>Méthode principale :</strong> Les assurances</p>
+                    <p><strong>Compagnies d'assurance :</strong> Entreprise à but lucratif</p>
+                    <p><strong>Mutuelle :</strong> Organisme qui ne fonctionne que pour ses membres, mutualisation des risques</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="highlight-box">
+            <p><strong>Note :</strong> Les grandes entreprises utilisent souvent à la fois le transfert (pour certains risques) et la rétention (pour d'autres)</p>
+        </div>
+    </section>
+    
+    <!-- Section 9: Processus d'évaluation -->
+    <section id="processus-evaluation">
+        <h2>9. PROCESSUS D'ÉVALUATION DES RISQUES</h2>
+        
+        <div class="highlight-box">
+            <p style="font-size: 1.2em;"><strong>Principe fondamental :</strong></p>
+            <p>Seule une évaluation efficace du niveau de risque permet de définir la stratégie à retenir entre évitement, atténuation, rétention et transfert.</p>
+            <ul style="margin-top: 10px;">
+                <li>La décision stratégique est souveraine</li>
+                <li>Le processus d'évaluation des risques est transversal, il concerne tous les acteurs impliqués</li>
+            </ul>
+        </div>
+        
+        <div class="highlight-box" style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left-color: #1976d2;">
+            <p><strong>Note :</strong> Une des raisons pour lesquelles les hauts placés en entreprise sont mieux payés est qu'ils prennent des risques et mettent en jeu leur responsabilité.</p>
+        </div>
+        
+        <h3>Le cycle traditionnel du processus d'évaluation</h3>
+        
+        <div class="schema-box">
+            <div class="schema-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div class="schema-item" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <div class="schema-item-title" style="color: white;">1. PRÉPARATION</div>
+                    <div class="schema-item-content" style="color: white;">Définition des objectifs et des tâches</div>
+                </div>
+                <div class="schema-item" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+                    <div class="schema-item-title" style="color: white;">2. INVENTAIRE</div>
+                    <div class="schema-item-content" style="color: white;">Listing des expériences, anticipation, identification des risques</div>
+                </div>
+                <div class="schema-item" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white;">
+                    <div class="schema-item-title" style="color: white;">3. CLASSEMENT</div>
+                    <div class="schema-item-content" style="color: white;">Rationalisation, systématisation, analyse systématique des impacts</div>
+                </div>
+                <div class="schema-item" style="background: linear-gradient(135deg, #feca57 0%, #ff6b6b 100%); color: white;">
+                    <div class="schema-item-title" style="color: white;">4. PROPOSITION</div>
+                    <div class="schema-item-content" style="color: white;">Stratégies de prévention et de protection (complémentaires)</div>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Chaîne de responsabilité et de communication</h3>
+        
+        <p style="text-align: center; font-size: 1.2em; margin: 20px 0; font-weight: bold; color: #667eea;">
+            Direction → Référent du siège → Responsable terrain → Expatrié
+        </p>
+        
+        <p>Tous ont un rôle dans la transmission d'informations pour permettre le choix stratégique de gestion d'un risque, via une <strong>communication transversale et dans les deux sens</strong>.</p>
+        
+        <div class="schema-grid">
+            <div class="info-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-left-color: #667eea;">
+                <div class="info-card-title" style="color: white;">DIRECTION</div>
+                <div class="info-card-content" style="color: white;">
+                    <ul style="color: white;">
+                        <li>Communiquer correctement sur ses décisions pour qu'elles soient suivies sans trop de résistance</li>
+                        <li>Expliquer pourquoi les décisions ont été prises</li>
+                        <li>S'assurer que les autres approuvent les procédures</li>
+                        <li>Contrôler</li>
+                        <li>Prendre des décisions valables pour plusieurs situations évolutives</li>
                     </ul>
                 </div>
             </div>
             
-            <!-- Section 8: Les 4 stratégies -->
-            <div class="section">
-                <h2>8. LES 4 STRATÉGIES DU RISK MANAGEMENT</h2>
-                
-                <p>Les entreprises appliquent traditionnellement quatre stratégies :</p>
-                
-                <div class="strategy-grid">
-                    <div class="strategy-card">
-                        <h3>1. ÉVITEMENT</h3>
-                        <p><strong>Définition :</strong> Éviter complètement le risque identifié</p>
-                        <p><strong>Exemple :</strong> Le risque est le déplacement → on ne se déplace pas quand c'est possible</p>
-                        <p><strong>Limite :</strong> Peut empêcher certains projets d'avancer</p>
-                    </div>
-                    
-                    <div class="strategy-card">
-                        <h3>2. ATTÉNUATION</h3>
-                        <p><strong>Objectif :</strong> Rendre le risque moins probable ou réduire son impact</p>
-                        <p><strong>Mesures de prévention :</strong> Tout ce que l'on met en place pour éviter que le risque se matérialise (formation du personnel, etc.)</p>
-                        <p><strong>Mesures de protection :</strong> Ce que l'on met en place pour limiter les conséquences de la réalisation du risque quand il se produit</p>
-                    </div>
-                    
-                    <div class="strategy-card">
-                        <h3>3. RÉTENTION</h3>
-                        <p><strong>Définition :</strong> Accepter le risque et assumer les conséquences</p>
-                        <p><strong>Quand :</strong> Le risque se produit lorsque les risques ont été évalués et que l'entreprise accepte de les prendre</p>
-                        <p>L'entreprise assume elle-même les conséquences</p>
-                    </div>
-                    
-                    <div class="strategy-card">
-                        <h3>4. TRANSFERT</h3>
-                        <p><strong>Définition :</strong> Transfert des conséquences financières à un tiers</p>
-                        <p><strong>Méthode principale :</strong> Les assurances</p>
-                        <p><strong>Compagnies d'assurance :</strong> Entreprise à but lucratif</p>
-                        <p><strong>Mutuelle :</strong> Organisme qui ne fonctionne que pour ses membres, mutualisation des risques</p>
-                    </div>
-                </div>
-                
-                <div class="info-box">
-                    <p><strong>Note :</strong> Les grandes entreprises utilisent souvent à la fois le transfert (pour certains risques) et la rétention (pour d'autres)</p>
-                </div>
-            </div>
-                        <!-- Section 9: Processus d'évaluation -->
-            <div class="section">
-                <h2>9. PROCESSUS D'ÉVALUATION DES RISQUES</h2>
-                
-                <div class="info-box">
-                    <p style="font-size: 1.2em;"><strong>Principe fondamental :</strong></p>
-                    <p>Seule une évaluation efficace du niveau de risque permet de définir la stratégie à retenir entre évitement, atténuation, rétention et transfert.</p>
-                    <ul style="margin-top: 10px;">
-                        <li>La décision stratégique est souveraine</li>
-                        <li>Le processus d'évaluation des risques est transversal, il concerne tous les acteurs impliqués</li>
+            <div class="info-card" style="background: linear-gradient(135deg, #764ba2 0%, #ee5a6f 100%); color: white; border-left-color: #764ba2;">
+                <div class="info-card-title" style="color: white;">RÉFÉRENT DU SIÈGE<br>(Capitalisation)</div>
+                <div class="info-card-content" style="color: white;">
+                    <ul style="color: white;">
+                        <li>Relais de transmission</li>
+                        <li>Systématisation du contrôle</li>
+                        <li>Structurer les informations pour faciliter la prise de décision</li>
                     </ul>
-                </div>
-                
-                <div class="highlight-box">
-                    <p><strong>Note :</strong> Une des raisons pour lesquelles les hauts placés en entreprise sont mieux payés est qu'ils prennent des risques et mettent en jeu leur responsabilité.</p>
-                </div>
-                
-                <h3>Le cycle traditionnel du processus d'évaluation</h3>
-                
-                <div class="process-flow">
-                    <div class="process-step">
-                        <strong>1. PRÉPARATION</strong><br>
-                        Définition des objectifs et des tâches
-                    </div>
-                    <div class="process-step">
-                        <strong>2. INVENTAIRE</strong><br>
-                        Listing des expériences, anticipation, identification des risques
-                    </div>
-                    <div class="process-step">
-                        <strong>3. CLASSEMENT</strong><br>
-                        Rationalisation, systématisation, analyse systématique des impacts
-                    </div>
-                    <div class="process-step">
-                        <strong>4. PROPOSITION</strong><br>
-                        Stratégies de prévention et de protection (complémentaires)
-                    </div>
-                </div>
-                
-                <h3>Chaîne de responsabilité et de communication</h3>
-                
-                <p style="text-align: center; font-size: 1.2em; margin: 20px 0;">
-                    <strong>Direction → Référent du siège → Responsable terrain → Expatrié</strong>
-                </p>
-                
-                <p>Tous ont un rôle dans la transmission d'informations pour permettre le choix stratégique de gestion d'un risque, via une <strong>communication transversale et dans les deux sens</strong>.</p>
-                
-                <div class="responsibility-chain">
-                    <div class="chain-level" style="background: #667eea; color: white;">
-                        <strong>DIRECTION</strong><br>
-                        Communiquer correctement sur ses décisions pour qu'elles soient suivies sans trop de résistance<br>
-                        Expliquer pourquoi les décisions ont été prises<br>
-                        S'assurer que les autres approuvent les procédures<br>
-                        Contrôler<br>
-                        Prendre des décisions valables pour plusieurs situations évolutives
-                    </div>
-                    <div class="chain-level" style="background: #764ba2; color: white;">
-                        <strong>RÉFÉRENT DU SIÈGE (Capitalisation)</strong><br>
-                        Relais de transmission<br>
-                        Systématisation du contrôle<br>
-                        Structurer les informations pour faciliter la prise de décision
-                    </div>
-                    <div class="chain-level" style="background: #ee5a6f; color: white;">
-                        <strong>RESPONSABLE TERRAIN (Reporting)</strong><br>
-                        Relais de transmission<br>
-                        Communication<br>
-                        Médiation
-                    </div>
-                    <div class="chain-level" style="background: #ff6b6b; color: white;">
-                        <strong>EXPATRIÉ (Reporting)</strong><br>
-                        Source primaire d'information<br>
-                        Vérification
-                    </div>
                 </div>
             </div>
             
-            <!-- Section 10: Documents -->
-            <div class="section">
-                <h2>10. LES DOCUMENTS DE GESTION DES RISQUES</h2>
-                
-                <div class="strategy-grid">
-                    <div class="strategy-card">
-                        <h3>DUER</h3>
-                        <p><strong>Document Unique d'Évaluation des Risques</strong></p>
-                        <h4>Obligation légale :</h4>
-                        <ul>
-                            <li>Toute entreprise est obligée de mettre à jour ce document</li>
-                            <li>Recense l'ensemble des risques auxquels sont exposés les collaborateurs, clients et matériels</li>
-                        </ul>
-                        <h4>Caractéristiques :</h4>
-                        <ul>
-                            <li>Document assez contraignant</li>
-                            <li>Explique pourquoi les services RH et Sécurité Santé au Travail enquêtent sur les situations à risques</li>
-                            <li>Plus l'entreprise est grande, plus ce document est difficile à mettre à jour</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="strategy-card">
-                        <h3>Politique de Sécurité</h3>
-                        <ul>
-                            <li>Document très théorique</li>
-                            <li>Reprend le travail du DUER</li>
-                            <li>Définit les orientations générales de l'entreprise en matière de sécurité</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="strategy-card">
-                        <h3>Plan de Sécurité</h3>
-                        <ul>
-                            <li>Document beaucoup plus opérationnel</li>
-                            <li>Lié à des situations concrètes</li>
-                            <li>Décline la politique de sécurité en actions pratiques</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="strategy-card">
-                        <h3>Rapport d'Incident</h3>
-                        <h4>Objectifs :</h4>
-                        <ul>
-                            <li>Normaliser et structurer la remontée d'information</li>
-                            <li>Rendre régulière la transmission des informations</li>
-                            <li>Gérer les informations avec un recul plus efficace</li>
-                            <li>Prendre des décisions plus éclairées</li>
-                        </ul>
-                        <h4>Importance :</h4>
-                        <ul>
-                            <li>Permet la capitalisation d'expérience</li>
-                            <li>Facilite l'identification des tendances et des risques récurrents</li>
-                        </ul>
-                    </div>
+            <div class="info-card" style="background: linear-gradient(135deg, #ee5a6f 0%, #ff6b6b 100%); color: white; border-left-color: #ee5a6f;">
+                <div class="info-card-title" style="color: white;">RESPONSABLE TERRAIN<br>(Reporting)</div>
+                <div class="info-card-content" style="color: white;">
+                    <ul style="color: white;">
+                        <li>Relais de transmission</li>
+                        <li>Communication</li>
+                        <li>Médiation</li>
+                    </ul>
                 </div>
             </div>
             
-            <!-- Section 11: Formation et communication -->
-            <div class="section">
-                <h2>11. LA FORMATION ET LA COMMUNICATION</h2>
-                
-                <h3>La formation</h3>
-                <div class="diagram">
-                    <h4>Rôle essentiel :</h4>
-                    <ul>
-                        <li>Préparer les collaborateurs aux risques spécifiques</li>
-                        <li>Développer les compétences en gestion de crise</li>
-                        <li>Sensibiliser aux comportements appropriés</li>
+            <div class="info-card" style="background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%); color: white; border-left-color: #ff6b6b;">
+                <div class="info-card-title" style="color: white;">EXPATRIÉ<br>(Reporting)</div>
+                <div class="info-card-content" style="color: white;">
+                    <ul style="color: white;">
+                        <li>Source primaire d'information</li>
+                        <li>Vérification</li>
                     </ul>
                 </div>
-                
-                <h3>Le briefing</h3>
-                <div class="info-box">
-                    <h4>Définition :</h4>
-                    <p>Moment où individuellement on s'assure de faire passer toutes les informations importantes</p>
-                    
-                    <h4>Contenu :</h4>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 10: Documents -->
+    <section id="documents">
+        <h2>10. LES DOCUMENTS DE GESTION DES RISQUES</h2>
+        
+        <div class="schema-grid">
+            <div class="info-card" style="border-left-color: #667eea;">
+                <div class="info-card-icon">📋</div>
+                <div class="info-card-title">DUER</div>
+                <div class="info-card-content">
+                    <p><strong>Document Unique d'Évaluation des Risques</strong></p>
+                    <h4>Obligation légale :</h4>
                     <ul>
-                        <li>Facteurs de risques</li>
-                        <li>Consignes de sécurité</li>
-                        <li>Procédures à suivre</li>
-                        <li>Vérifier qu'on est sur la même longueur d'ondes avant le départ en mission</li>
+                        <li>Toute entreprise est obligée de mettre à jour ce document</li>
+                        <li>Recense l'ensemble des risques auxquels sont exposés les collaborateurs, clients et matériels</li>
+                    </ul>
+                    <h4>Caractéristiques :</h4>
+                    <ul>
+                        <li>Document assez contraignant</li>
+                        <li>Explique pourquoi les services RH et Sécurité Santé au Travail enquêtent sur les situations à risques</li>
+                        <li>Plus l'entreprise est grande, plus ce document est difficile à mettre à jour</li>
                     </ul>
                 </div>
-                
-                <h3>Le débriefing</h3>
-                <div class="success-box">
+            </div>
+            
+            <div class="info-card" style="border-left-color: #764ba2;">
+                <div class="info-card-icon">📄</div>
+                <div class="info-card-title">Politique de Sécurité</div>
+                <div class="info-card-content">
+                    <ul>
+                        <li>Document très théorique</li>
+                        <li>Reprend le travail du DUER</li>
+                        <li>Définit les orientations générales de l'entreprise en matière de sécurité</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-card" style="border-left-color: #f5576c;">
+                <div class="info-card-icon">📝</div>
+                <div class="info-card-title">Plan de Sécurité</div>
+                <div class="info-card-content">
+                    <ul>
+                        <li>Document beaucoup plus opérationnel</li>
+                        <li>Lié à des situations concrètes</li>
+                        <li>Décline la politique de sécurité en actions pratiques</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="info-card" style="border-left-color: #feca57;">
+                <div class="info-card-icon">⚠️</div>
+                <div class="info-card-title">Rapport d'Incident</div>
+                <div class="info-card-content">
+                    <h4>Objectifs :</h4>
+                    <ul>
+                        <li>Normaliser et structurer la remontée d'information</li>
+                        <li>Rendre régulière la transmission des informations</li>
+                        <li>Gérer les informations avec un recul plus efficace</li>
+                        <li>Prendre des décisions plus éclairées</li>
+                    </ul>
                     <h4>Importance :</h4>
                     <ul>
-                        <li><strong>Phase où l'organisation en apprend le plus</strong></li>
-                        <li>Retour d'expérience essentiel</li>
-                        <li>Permet d'améliorer les procédures existantes</li>
-                        <li>Capitalisation des connaissances</li>
-                    </ul>
-                    
-                    <p style="margin-top: 15px;"><strong>Secteur d'activité où il est essentiel :</strong> La cybercriminalité (mentionné comme exemple), mais applicable à tous les secteurs avec enjeux sécuritaires</p>
-                </div>
-                
-                <h3>L'équipe et la communication</h3>
-                <div class="diagram">
-                    <h4>Principes clés :</h4>
-                    <ul>
-                        <li>Communication transversale</li>
-                        <li>Communication bidirectionnelle (terrain ↔ siège)</li>
-                        <li>Communication régulière et fluide</li>
-                        <li>Communication sécurisée (surtout pour informations sensibles)</li>
-                    </ul>
-                    
-                    <h4>Enjeux :</h4>
-                    <ul>
-                        <li>Éviter l'isolement des équipes terrain</li>
-                        <li>Permettre une prise de décision éclairée</li>
-                        <li>Faciliter la coordination</li>
-                        <li>Assurer le suivi des situations</li>
-                    </ul>
-                </div>
-                
-                <h3>La veille et ses outils</h3>
-                <div class="diagram">
-                    <h4>Définition de la veille :</h4>
-                    <ul>
-                        <li>Surveillance continue de l'environnement</li>
-                        <li>Collecte et analyse d'informations</li>
-                    </ul>
-                    
-                    <h4>Types de veille :</h4>
-                    <ul>
-                        <li>Veille géopolitique</li>
-                        <li>Veille sécuritaire</li>
-                        <li>Veille sanitaire</li>
-                        <li>Veille sociale</li>
-                        <li>Veille économique</li>
-                    </ul>
-                    
-                    <h4>Outils de veille :</h4>
-                    <ul>
-                        <li>Sources multiples et diversifiées</li>
-                        <li>Sites internet spécialisés</li>
-                        <li>Contacts locaux</li>
-                        <li>Réseaux professionnels</li>
-                        <li>Médias locaux et internationaux</li>
-                        <li>Alertes automatisées</li>
-                        <li>Rapports d'organismes spécialisés</li>
-                    </ul>
-                    
-                    <h4>Bonnes pratiques :</h4>
-                    <ul>
-                        <li>Croiser les sources</li>
-                        <li>Vérifier la fiabilité des informations</li>
-                        <li>Maintenir une veille permanente</li>
-                        <li>Adapter le niveau de veille selon le contexte</li>
-                        <li>Partager les informations pertinentes</li>
+                        <li>Permet la capitalisation d'expérience</li>
+                        <li>Facilite l'identification des tendances et des risques récurrents</li>
                     </ul>
                 </div>
             </div>
-            
-            <!-- Section 12: Comprendre son positionnement -->
-            <div class="section">
-                <h2>12. COMPRENDRE SON POSITIONNEMENT (Risques liés à la MISSION)</h2>
-                
-                <div class="highlight-box">
-                    <h3>Questions à se poser :</h3>
-                    <ul>
-                        <li>Est-ce que j'ai un rôle de décideur ?</li>
-                        <li>Est-ce que je suis perçu comme tel ?</li>
-                        <li>Est-ce que je suis un subordonné ?</li>
-                        <li>Est-ce que je fais du reporting ? De quelle manière ?</li>
-                        <li><strong>Qui suis-je et qu'est-ce que je représente ?</strong></li>
-                    </ul>
-                </div>
-                
-                <h3>Image et rôle de l'entreprise dans le pays</h3>
-                
-                <div class="diagram">
-                    <h4>Facteurs déterminants :</h4>
-                    
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Facteur</th>
-                                <th>Éléments à considérer</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Type d'organisation</strong></td>
-                                <td>ONG, entreprise privée, association</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Nationalité de l'entreprise</strong></td>
-                                <td>Exemple : Entreprise française au Mali ou Burkina Faso - impact sur la perception locale</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Réputation</strong></td>
-                                <td>Dépend de l'activité locale et de son impact sur les populations</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Impact</strong></td>
-                                <td>Sur la population locale, sur l'environnement</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Historique</strong></td>
-                                <td>Des prédécesseurs et ce que l'on va renvoyer dans le futur</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Hiérarchie locale</strong></td>
-                                <td>Structure organisationnelle sur place</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <!-- Section 13: Synthèse finale -->
-            <div class="section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-left: none;">
-                <h2 style="color: white;">13. SYNTHÈSE : POINTS CLÉS À RETENIR POUR L'EXAMEN</h2>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">Formule essentielle :</h3>
-                    <p style="font-size: 1.5em; text-align: center; margin: 10px 0; font-weight: bold;">RISQUE = MENACE × VULNÉRABILITÉ</p>
-                    <p style="text-align: center;">Un risque n'existe que lorsqu'une menace rencontre une vulnérabilité</p>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">Concepts fondamentaux :</h3>
-                    <ul>
-                        <li><strong>Sécurité</strong> = Maîtrise du niveau de risque (≠ absence de risque)</li>
-                        <li><strong>Sécurité objective</strong> (état réel) vs <strong>Sécurité subjective</strong> (sentiment)</li>
-                        <li>Sans risque, pas de projet !</li>
-                        <li>L'employeur a une <strong>obligation de résultat</strong></li>
-                    </ul>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">4 Stratégies de Risk Management :</h3>
-                    <ol style="font-size: 1.1em;">
-                        <li><strong>ÉVITEMENT</strong> - Éviter complètement le risque</li>
-                        <li><strong>ATTÉNUATION</strong> - Prévention (éviter la réalisation) + Protection (limiter les conséquences)</li>
-                        <li><strong>RÉTENTION</strong> - Accepter et assumer le risque</li>
-                        <li><strong>TRANSFERT</strong> - Transférer les conséquences financières (assurances)</li>
-                    </ol>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">3 Types de risques à l'international :</h3>
-                    <ol style="font-size: 1.1em;">
-                        <li><strong>Risques INDIVIDU</strong> - Accidents de route (1ère cause), maladies (2ème cause), comportements</li>
-                        <li><strong>Risques MISSION</strong> - Fonction, perception, relations, signaux faibles</li>
-                        <li><strong>Risques PAYS</strong> - Géopolitique, catastrophes naturelles, infrastructures</li>
-                    </ol>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">5 Spécificités de l'international :</h3>
-                    <ol>
-                        <li>Éloignement géographique</li>
-                        <li>Plus grande diversité des menaces</li>
-                        <li>Plus grande vulnérabilité</li>
-                        <li>Moyens d'action et pouvoir de contrôle limités</li>
-                        <li>Cadre juridique plus contraignant et plus incertain</li>
-                    </ol>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">9 Principes généraux de prévention (Article L4121) :</h3>
-                    <ol>
-                        <li>Éviter les risques</li>
-                        <li>Évaluer les risques</li>
-                        <li>Combattre à la source</li>
-                        <li>Adapter le travail à l'homme</li>
-                        <li>Tenir compte de l'évolution technique</li>
-                        <li>Remplacer le dangereux</li>
-                        <li>Planifier la prévention</li>
-                        <li>Prioriser protection collective</li>
-                        <li>Donner instructions appropriées</li>
-                    </ol>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">Documents obligatoires :</h3>
-                    <ul style="font-size: 1.1em;">
-                        <li><strong>DUER</strong> - Document Unique d'Évaluation des Risques (obligation légale)</li>
-                        <li><strong>Politique de sécurité</strong> - Document théorique</li>
-                        <li><strong>Plan de sécurité</strong> - Document opérationnel</li>
-                        <li><strong>Rapport d'incident</strong> - Remontée d'information structurée</li>
-                    </ul>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">Responsabilité de l'employeur (Arrêt Amiante 2002) :</h3>
-                    <ul style="font-size: 1.1em;">
-                        <li><strong>Obligation de RÉSULTAT</strong> (pas seulement de moyens)</li>
-                        <li>Responsable même à l'étranger</li>
-                        <li>Responsable même hors temps de travail</li>
-                        <li>Responsable même sans atteinte réelle (sentiment d'insécurité suffit)</li>
-                        <li>Ne peut pas s'abriter derrière l'attitude du salarié</li>
-                        <li>Peut sanctionner le refus de suivre les consignes</li>
-                        <li>Doit décider de rapatrier en temps utile</li>
-                    </ul>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">Processus d'évaluation (4 étapes) :</h3>
-                    <ol style="font-size: 1.1em;">
-                        <li><strong>PRÉPARATION</strong> - Définition objectifs et tâches</li>
-                        <li><strong>INVENTAIRE</strong> - Identification des risques</li>
-                        <li><strong>CLASSEMENT</strong> - Analyse systématique des impacts</li>
-                        <li><strong>PROPOSITION</strong> - Stratégies de prévention et protection</li>
-                    </ol>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">Chaîne de responsabilité :</h3>
-                    <p style="text-align: center; font-size: 1.2em; margin: 15px 0;">
-                        <strong>Direction → Référent siège → Responsable terrain → Expatrié</strong>
-                    </p>
-                    <p style="text-align: center;">Communication transversale et bidirectionnelle obligatoire</p>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">Moments clés d'une mission :</h3>
-                    <p><strong>Pour l'individu :</strong></p>
-                    <ul>
-                        <li>L'arrivée (organisation accueil)</li>
-                        <li><strong>Phase de relâchement (CRITIQUE - baisse vigilance)</strong></li>
-                        <li>Derniers moments (période critique)</li>
-                    </ul>
-                    <p style="margin-top: 15px;"><strong>Pour le projet :</strong></p>
-                    <ul>
-                        <li>Le lancement</li>
-                        <li>Les changements visibles (RH, lieux)</li>
-                        <li>La fin d'un cycle</li>
-                    </ul>
-                    <p style="margin-top: 10px;">→ <strong>Nécessitent une réévaluation des risques</strong></p>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">3 Mesures radicales (risques PAYS) :</h3>
-                    <ol style="font-size: 1.1em;">
-                        <li><strong>HIBERNATION</strong> - Mise à l'abri, attente ordre d'évacuation</li>
-                        <li><strong>ÉVACUATION</strong> - Retrait du personnel (conséquences irréversibles)</li>
-                        <li><strong>ÉVITEMENT ET PROTECTION</strong> - Renforcement sécurité</li>
-                    </ol>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">Formation et communication :</h3>
-                    <ul>
-                        <li><strong>Briefing</strong> - Avant la mission (passer toutes les infos importantes)</li>
-                        <li><strong>Débriefing</strong> - Après la mission (phase où l'organisation apprend le plus)</li>
-                        <li><strong>Veille</strong> - Continue (géopolitique, sécuritaire, sanitaire, sociale, économique)</li>
-                        <li><strong>Communication</strong> - Transversale, bidirectionnelle, régulière, sécurisée</li>
-                    </ul>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">Statistiques à retenir :</h3>
-                    <ul style="font-size: 1.1em;">
-                        <li><strong>1ère cause de rapatriement/décès :</strong> ACCIDENTS DE LA ROUTE</li>
-                        <li><strong>2ème cause de rapatriement :</strong> MALADIES</li>
-                    </ul>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">Conséquences du non-respect des obligations :</h3>
-                    <ul>
-                        <li>Poursuites judiciaires (civiles et pénales)</li>
-                        <li>Pertes financières importantes</li>
-                        <li>Perte d'image / risque de réputation</li>
-                        <li>Difficultés opérationnelles à l'étranger</li>
-                        <li>Augmentation de la vulnérabilité</li>
-                    </ul>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h3 style="color: white;">Notions importantes :</h3>
-                    <ul>
-                        <li><strong>Signaux faibles</strong> - À détecter pour risques MISSION (manifestation progressive)</li>
-                        <li><strong>Principe de précaution</strong> - Sensibiliser, former, anticiper</li>
-                        <li><strong>Défaut d'information</strong> - Cause majeure de comportements inadéquats</li>
-                        <li><strong>Sentiment de liberté</strong> - Éloignement des repères = prise de risques</li>
-                        <li><strong>Capitalisation</strong> - Essentielle via débriefing et rapports d'incident</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- Section 14: Aide-mémoire visuel -->
-            <div class="section">
-                <h2>14. AIDE-MÉMOIRE VISUEL</h2>
-                
-                <div class="diagram">
-                    <h3 style="text-align: center; color: #667eea; margin-bottom: 30px;">Schéma récapitulatif</h3>
-                    
-                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
-                        <h4 style="color: #667eea;">LA BASE</h4>
-                        <p style="text-align: center; font-size: 1.5em; font-weight: bold; margin: 15px 0;">
-                            MENACE × VULNÉRABILITÉ = RISQUE
-                        </p>
-                    </div>
-                    
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
-                        <div style="background: #e3f2fd; padding: 20px; border-radius: 10px;">
-                            <h4 style="color: #1976d2;">AVANT (Prévention)</h4>
-                            <ul>
-                                <li>Éviter</li>
-                                <li>Évaluer</li>
-                                <li>Former</li>
-                                <li>Briefing</li>
-                                <li>DUER</li>
-                            </ul>
-                        </div>
-                        
-                        <div style="background: #fff3e0; padding: 20px; border-radius: 10px;">
-                            <h4 style="color: #f57c00;">PENDANT (Protection)</h4>
-                            <ul>
-                                <li>Veille</li>
-                                <li>Communication</li>
-                                <li>Reporting</li>
-                                <li>Signaux faibles</li>
-                                <li>Vigilance</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div style="background: #e8f5e9; padding: 20px; border-radius: 10px; margin: 20px 0;">
-                        <h4 style="color: #388e3c;">APRÈS (Capitalisation)</h4>
-                        <ul>
-                            <li>Débriefing</li>
-                            <li>Rapport d'incident</li>
-                            <li>Amélioration continue</li>
-                            <li>Partage d'expérience</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-         
-            
         </div>
-    </div>
+    </section>
+    
+    <!-- Section 11: Formation et communication -->
+    <section id="formation-communication">
+        <h2>11. LA FORMATION ET LA COMMUNICATION</h2>
+        
+        <h3>La formation</h3>
+        <div class="schema-box">
+            <h4>Rôle essentiel :</h4>
+            <ul>
+                <li>Préparer les collaborateurs aux risques spécifiques</li>
+                <li>Développer les compétences en gestion de crise</li>
+                <li>Sensibiliser aux comportements appropriés</li>
+            </ul>
+        </div>
+        
+        <h3>Le briefing</h3>
+        <div class="highlight-box">
+            <h4>Définition :</h4>
+            <p>Moment où individuellement on s'assure de faire passer toutes les informations importantes</p>
+            
+            <h4>Contenu :</h4>
+            <ul>
+                <li>Facteurs de risques</li>
+                <li>Consignes de sécurité</li>
+                <li>Procédures à suivre</li>
+                <li>Vérifier qu'on est sur la même longueur d'ondes avant le départ en mission</li>
+            </ul>
+        </div>
+        
+        <h3>Le débriefing</h3>
+        <div class="highlight-box" style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left-color: #388e3c;">
+            <h4>Importance :</h4>
+            <ul>
+                <li><strong style="color: #388e3c;">Phase où l'organisation en apprend le plus</strong></li>
+                <li>Retour d'expérience essentiel</li>
+                <li>Permet d'améliorer les procédures existantes</li>
+                <li>Capitalisation des connaissances</li>
+            </ul>
+            
+            <p style="margin-top: 15px;"><strong>Secteur d'activité où il est essentiel :</strong> La cybercriminalité (mentionné comme exemple), mais applicable à tous les secteurs avec enjeux sécuritaires</p>
+        </div>
+        
+        <h3>L'équipe et la communication</h3>
+        <div class="schema-box">
+            <h4>Principes clés :</h4>
+            <ul>
+                <li>Communication transversale</li>
+                <li>Communication bidirectionnelle (terrain ↔ siège)</li>
+                <li>Communication régulière et fluide</li>
+                <li>Communication sécurisée (surtout pour informations sensibles)</li>
+            </ul>
+            
+            <h4>Enjeux :</h4>
+            <ul>
+                <li>Éviter l'isolement des équipes terrain</li>
+                <li>Permettre une prise de décision éclairée</li>
+                <li>Faciliter la coordination</li>
+                <li>Assurer le suivi des situations</li>
+            </ul>
+        </div>
+        
+        <h3>La veille et ses outils</h3>
+        <div class="schema-box">
+            <h4>Définition de la veille :</h4>
+            <ul>
+                <li>Surveillance continue de l'environnement</li>
+                <li>Collecte et analyse d'informations</li>
+            </ul>
+            
+            <h4>Types de veille :</h4>
+            <div class="schema-grid">
+                <div class="schema-item">
+                    <div class="schema-item-title">Veille géopolitique</div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Veille sécuritaire</div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Veille sanitaire</div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Veille sociale</div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Veille économique</div>
+                </div>
+            </div>
+            
+            <h4 style="margin-top: 2rem;">Outils de veille :</h4>
+            <ul>
+                <li>Sources multiples et diversifiées</li>
+                <li>Sites internet spécialisés</li>
+                <li>Contacts locaux</li>
+                <li>Réseaux professionnels</li>
+                <li>Médias locaux et internationaux</li>
+                <li>Alertes automatisées</li>
+                <li>Rapports d'organismes spécialisés</li>
+            </ul>
+            
+            <h4 style="margin-top: 2rem;">Bonnes pratiques :</h4>
+            <ul>
+                <li>Croiser les sources</li>
+                <li>Vérifier la fiabilité des informations</li>
+                <li>Maintenir une veille permanente</li>
+                <li>Adapter le niveau de veille selon le contexte</li>
+                <li>Partager les informations pertinentes</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Section 12: Comprendre son positionnement -->
+    <section id="positionnement">
+        <h2>12. COMPRENDRE SON POSITIONNEMENT (Risques liés à la MISSION)</h2>
+        
+        <div class="highlight-box">
+            <h3>Questions à se poser :</h3>
+            <ul>
+                <li>Est-ce que j'ai un rôle de décideur ?</li>
+                <li>Est-ce que je suis perçu comme tel ?</li>
+                <li>Est-ce que je suis un subordonné ?</li>
+                <li>Est-ce que je fais du reporting ? De quelle manière ?</li>
+                <li><strong>Qui suis-je et qu'est-ce que je représente ?</strong></li>
+            </ul>
+        </div>
+        
+        <h3>Image et rôle de l'entreprise dans le pays</h3>
+        
+        <div class="schema-box">
+            <h4>Facteurs déterminants :</h4>
+            
+            <table style="width: 100%; margin-top: 20px; border-collapse: collapse;">
+                <thead>
+                    <tr style="background-color: #667eea; color: white;">
+                        <th style="padding: 1rem; text-align: left;">Facteur</th>
+                        <th style="padding: 1rem; text-align: left;">Éléments à considérer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f8f9fa;">
+                        <td style="padding: 1rem;"><strong>Type d'organisation</strong></td>
+                        <td style="padding: 1rem;">ONG, entreprise privée, association</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem;"><strong>Nationalité de l'entreprise</strong></td>
+                        <td style="padding: 1rem;">Exemple : Entreprise française au Mali ou Burkina Faso - impact sur la perception locale</td>
+                    </tr>
+                    <tr style="background-color: #f8f9fa;">
+                        <td style="padding: 1rem;"><strong>Réputation</strong></td>
+                        <td style="padding: 1rem;">Dépend de l'activité locale et de son impact sur les populations</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem;"><strong>Impact</strong></td>
+                        <td style="padding: 1rem;">Sur la population locale, sur l'environnement</td>
+                    </tr>
+                    <tr style="background-color: #f8f9fa;">
+                        <td style="padding: 1rem;"><strong>Historique</strong></td>
+                        <td style="padding: 1rem;">Des prédécesseurs et ce que l'on va renvoyer dans le futur</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem;"><strong>Hiérarchie locale</strong></td>
+                        <td style="padding: 1rem;">Structure organisationnelle sur place</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <!-- Section 13: Synthèse finale -->
+    <section id="synthese" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem; border-radius: 15px; margin-top: 3rem;">
+        <h2 style="color: white; border-bottom: 2px solid white; padding-bottom: 1rem;">13. SYNTHÈSE : POINTS CLÉS À RETENIR POUR L'EXAMEN</h2>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">Formule essentielle :</h3>
+            <p style="font-size: 1.5em; text-align: center; margin: 10px 0; font-weight: bold;">RISQUE = MENACE × VULNÉRABILITÉ</p>
+            <p style="text-align: center;">Un risque n'existe que lorsqu'une menace rencontre une vulnérabilité</p>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">Concepts fondamentaux :</h3>
+            <ul style="color: white;">
+                <li><strong>Sécurité</strong> = Maîtrise du niveau de risque (≠ absence de risque)</li>
+                <li><strong>Sécurité objective</strong> (état réel) vs <strong>Sécurité subjective</strong> (sentiment)</li>
+                <li>Sans risque, pas de projet !</li>
+                <li>L'employeur a une <strong>obligation de résultat</strong></li>
+            </ul>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">4 Stratégies de Risk Management :</h3>
+            <ol style="font-size: 1.1em; color: white;">
+                <li><strong>ÉVITEMENT</strong> - Éviter complètement le risque</li>
+                <li><strong>ATTÉNUATION</strong> - Prévention (éviter la réalisation) + Protection (limiter les conséquences)</li>
+                <li><strong>RÉTENTION</strong> - Accepter et assumer le risque</li>
+                <li><strong>TRANSFERT</strong> - Transférer les conséquences financières (assurances)</li>
+            </ol>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">3 Types de risques à l'international :</h3>
+            <ol style="font-size: 1.1em; color: white;">
+                <li><strong>Risques INDIVIDU</strong> - Accidents de route (1ère cause), maladies (2ème cause), comportements</li>
+                <li><strong>Risques MISSION</strong> - Fonction, perception, relations, signaux faibles</li>
+                <li><strong>Risques PAYS</strong> - Géopolitique, catastrophes naturelles, infrastructures</li>
+            </ol>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">5 Spécificités de l'international :</h3>
+            <ol style="color: white;">
+                <li>Éloignement géographique</li>
+                <li>Plus grande diversité des menaces</li>
+                <li>Plus grande vulnérabilité</li>
+                <li>Moyens d'action et pouvoir de contrôle limités</li>
+                <li>Cadre juridique plus contraignant et plus incertain</li>
+            </ol>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">9 Principes généraux de prévention (Article L4121) :</h3>
+            <ol style="color: white;">
+                <li>Éviter les risques</li>
+                <li>Évaluer les risques</li>
+                <li>Combattre à la source</li>
+                <li>Adapter le travail à l'homme</li>
+                <li>Tenir compte de l'évolution technique</li>
+                <li>Remplacer le dangereux</li>
+                <li>Planifier la prévention</li>
+                <li>Prioriser protection collective</li>
+                <li>Donner instructions appropriées</li>
+            </ol>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">Documents obligatoires :</h3>
+            <ul style="font-size: 1.1em; color: white;">
+                <li><strong>DUER</strong> - Document Unique d'Évaluation des Risques (obligation légale)</li>
+                <li><strong>Politique de sécurité</strong> - Document théorique</li>
+                <li><strong>Plan de sécurité</strong> - Document opérationnel</li>
+                <li><strong>Rapport d'incident</strong> - Remontée d'information structurée</li>
+            </ul>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">Responsabilité de l'employeur (Arrêt Amiante 2002) :</h3>
+            <ul style="font-size: 1.1em; color: white;">
+                <li><strong>Obligation de RÉSULTAT</strong> (pas seulement de moyens)</li>
+                <li>Responsable même à l'étranger</li>
+                <li>Responsable même hors temps de travail</li>
+                <li>Responsable même sans atteinte réelle (sentiment d'insécurité suffit)</li>
+                <li>Ne peut pas s'abriter derrière l'attitude du salarié</li>
+                <li>Peut sanctionner le refus de suivre les consignes</li>
+                <li>Doit décider de rapatrier en temps utile</li>
+            </ul>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">Processus d'évaluation (4 étapes) :</h3>
+            <ol style="font-size: 1.1em; color: white;">
+                <li><strong>PRÉPARATION</strong> - Définition objectifs et tâches</li>
+                <li><strong>INVENTAIRE</strong> - Identification des risques</li>
+                <li><strong>CLASSEMENT</strong> - Analyse systématique des impacts</li>
+                <li><strong>PROPOSITION</strong> - Stratégies de prévention et protection</li>
+            </ol>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">Chaîne de responsabilité :</h3>
+            <p style="text-align: center; font-size: 1.2em; margin: 15px 0; color: white;">
+                <strong>Direction → Référent siège → Responsable terrain → Expatrié</strong>
+            </p>
+            <p style="text-align: center; color: white;">Communication transversale et bidirectionnelle obligatoire</p>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">Moments clés d'une mission :</h3>
+            <p style="color: white;"><strong>Pour l'individu :</strong></p>
+            <ul style="color: white;">
+                <li>L'arrivée (organisation accueil)</li>
+                <li><strong>Phase de relâchement (CRITIQUE - baisse vigilance)</strong></li>
+                <li>Derniers moments (période critique)</li>
+            </ul>
+            <p style="margin-top: 15px; color: white;"><strong>Pour le projet :</strong></p>
+            <ul style="color: white;">
+                <li>Le lancement</li>
+                <li>Les changements visibles (RH, lieux)</li>
+                <li>La fin d'un cycle</li>
+            </ul>
+            <p style="margin-top: 10px; color: white;">→ <strong>Nécessitent une réévaluation des risques</strong></p>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">3 Mesures radicales (risques PAYS) :</h3>
+            <ol style="font-size: 1.1em; color: white;">
+                <li><strong>HIBERNATION</strong> - Mise à l'abri, attente ordre d'évacuation</li>
+                <li><strong>ÉVACUATION</strong> - Retrait du personnel (conséquences irréversibles)</li>
+                <li><strong>ÉVITEMENT ET PROTECTION</strong> - Renforcement sécurité</li>
+            </ol>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">Formation et communication :</h3>
+            <ul style="color: white;">
+                <li><strong>Briefing</strong> - Avant la mission (passer toutes les infos importantes)</li>
+                <li><strong>Débriefing</strong> - Après la mission (phase où l'organisation apprend le plus)</li>
+                <li><strong>Veille</strong> - Continue (géopolitique, sécuritaire, sanitaire, sociale, économique)</li>
+                <li><strong>Communication</strong> - Transversale, bidirectionnelle, régulière, sécurisée</li>
+            </ul>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">Statistiques à retenir :</h3>
+            <ul style="font-size: 1.1em; color: white;">
+                <li><strong>1ère cause de rapatriement/décès :</strong> ACCIDENTS DE LA ROUTE</li>
+                <li><strong>2ème cause de rapatriement :</strong> MALADIES</li>
+            </ul>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">Conséquences du non-respect des obligations :</h3>
+            <ul style="color: white;">
+                <li>Poursuites judiciaires (civiles et pénales)</li>
+                <li>Pertes financières importantes</li>
+                <li>Perte d'image / risque de réputation</li>
+                <li>Difficultés opérationnelles à l'étranger</li>
+                <li>Augmentation de la vulnérabilité</li>
+            </ul>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h3 style="color: white;">Notions importantes :</h3>
+            <ul style="color: white;">
+                <li><strong>Signaux faibles</strong> - À détecter pour risques MISSION (manifestation progressive)</li>
+                <li><strong>Principe de précaution</strong> - Sensibiliser, former, anticiper</li>
+                <li><strong>Défaut d'information</strong> - Cause majeure de comportements inadéquats</li>
+                <li><strong>Sentiment de liberté</strong> - Éloignement des repères = prise de risques</li>
+                <li><strong>Capitalisation</strong> - Essentielle via débriefing et rapports d'incident</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Section 14: Aide-mémoire visuel -->
+    <section id="aide-memoire">
+        <h2>14. AIDE-MÉMOIRE VISUEL</h2>
+        
+        <div class="schema-box">
+            <h3 style="text-align: center; color: #667eea; margin-bottom: 30px;">Schéma récapitulatif</h3>
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0;">
+                <h4 style="color: #667eea;">LA BASE</h4>
+                <p style="text-align: center; font-size: 1.5em; font-weight: bold; margin: 15px 0; color: #667eea;">
+                    MENACE × VULNÉRABILITÉ = RISQUE
+                </p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
+                <div style="background: #e3f2fd; padding: 20px; border-radius: 10px; border-left: 4px solid #1976d2;">
+                    <h4 style="color: #1976d2;">AVANT (Prévention)</h4>
+                    <ul>
+                        <li>Éviter</li>
+                        <li>Évaluer</li>
+                        <li>Former</li>
+                        <li>Briefing</li>
+                        <li>DUER</li>
+                    </ul>
+                </div>
+                
+                <div style="background: #fff3e0; padding: 20px; border-radius: 10px; border-left: 4px solid #f57c00;">
+                    <h4 style="color: #f57c00;">PENDANT (Protection)</h4>
+                    <ul>
+                        <li>Veille</li>
+                        <li>Communication</li>
+                        <li>Reporting</li>
+                        <li>Signaux faibles</li>
+                        <li>Vigilance</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="background: #e8f5e9; padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #388e3c;">
+                <h4 style="color: #388e3c;">APRÈS (Capitalisation)</h4>
+                <ul>
+                    <li>Débriefing</li>
+                    <li>Rapport d'incident</li>
+                    <li>Amélioration continue</li>
+                    <li>Partage d'expérience</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-
+</div>
 
 {% endblock %}
