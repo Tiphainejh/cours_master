@@ -13,21 +13,18 @@ def index():
             'id': 'histoire-ri',
             'titre': 'Histoire des Relations Internationales',
             'description': 'Cours sur l\'histoire des relations internationales au XXe siècle',
-            'icon': '📚',
             'url': '/histoire-ri'
         },
         {
             'id': 'geopolitique',
             'titre': 'Géopolitique',
             'description': 'Analyse géopolitique des grands enjeux contemporains',
-            'icon': '🌍',
             'url': '/geopolitique'
         },
         {
             'id': 'risques',
             'titre': 'Analyse des Risques Internationaux',
             'description': 'Étude des risques géopolitiques, économiques et sécuritaires',
-            'icon': '⚠️',
             'url': '/risques'
         }
     ]
