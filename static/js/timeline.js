@@ -1,3 +1,67 @@
+// Menu burger et dropdowns
+    document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.getElementById('navToggle');
+        const mainNav = document.getElementById('mainNav');
+        const navOverlay = document.getElementById('navOverlay');
+        
+        // Ouvrir/fermer le menu
+        if (navToggle) {
+            navToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mainNav.classList.toggle('active');
+                navOverlay.classList.toggle('active');
+            });
+        }
+        
+        // Fermer en cliquant sur l'overlay
+        if (navOverlay) {
+            navOverlay.addEventListener('click', function() {
+                navToggle.classList.remove('active');
+                mainNav.classList.remove('active');
+                navOverlay.classList.remove('active');
+            });
+        }
+
+        // Gestion des dropdowns
+        document.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                const parent = this.parentElement;
+                const wasActive = parent.classList.contains('active');
+                
+                // Fermer tous les autres dropdowns
+                document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+                
+                // Toggle le dropdown actuel
+                if (!wasActive) {
+                    parent.classList.add('active');
+                }
+            });
+        });
+
+        // Fermer le menu en cliquant sur un lien
+        document.querySelectorAll('.nav-dropdown-menu .nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                navToggle.classList.remove('active');
+                mainNav.classList.remove('active');
+                navOverlay.classList.remove('active');
+                document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            });
+        });
+
+        // Highlight du lien actif
+        const currentPath = window.location.pathname;
+        document.querySelectorAll('.nav-link').forEach(link => {
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('active-page');
+            }
+        });
+    });
+
 // Timeline interactive
 document.addEventListener('DOMContentLoaded', function() {
     // Animation au scroll
