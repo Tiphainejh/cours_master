@@ -1180,27 +1180,6 @@ html {
     transition: width 0.1s ease;
 }
 
-/* Sections numérotées automatiquement */
-.cours-content {
-    counter-reset: section;
-}
-
-.cours-content section > h2::before {
-    counter-increment: section;
-    content: counter(section) ". ";
-    color: #f5576c;
-}
-
-.cours-content section {
-    counter-reset: subsection;
-}
-
-.cours-content section > h3::before {
-    counter-increment: subsection;
-    content: counter(section) "." counter(subsection) " ";
-    color: #fa709a;
-}
-
 /* Layout 2 colonnes pour sommaire + contenu (optionnel) */
 .cours-layout {
     display: grid;
