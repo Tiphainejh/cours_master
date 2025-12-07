@@ -1,0 +1,1172 @@
+<artifact identifier="synthese-cours-ri" type="text/html" title="Synthèse complète des cours">
+{% extends "base.html" %}
+
+{% block title %}Synthèse générale - Relations internationales{% endblock %}
+
+{% block content %}
+<div class="cours-content">
+    <a href="/" class="back-link">&larr; Retour à l'accueil</a>
+    
+    <h1>Synthèse générale : Les relations internationales au XXe siècle</h1>
+
+    <div class="highlight-box" style="margin-bottom: 2rem;">
+        <h4>🎯 Vue d'ensemble</h4>
+        <p>Cette synthèse rassemble les concepts clés, événements majeurs et dynamiques essentielles de tous les cours sur les relations internationales contemporaines. Elle offre une vision globale et interconnectée des grandes thématiques étudiées.</p>
+    </div>
+
+    <nav class="table-of-contents">
+        <h3>Sommaire</h3>
+        <ul>
+            <li><a href="#definitions">Définitions et concepts fondamentaux</a></li>
+            <li><a href="#organisations">Les organisations internationales</a></li>
+            <li><a href="#colonisation">Colonisation et décolonisation</a></li>
+            <li><a href="#migrations">Histoire des migrations</a></li>
+            <li><a href="#economie">Relations économiques internationales</a></li>
+            <li><a href="#culture">Diplomatie culturelle</a></li>
+            <li><a href="#sport">Le sport dans les RI</a></li>
+            <li><a href="#europe">La construction européenne</a></li>
+            <li><a href="#chronologie">Chronologie générale</a></li>
+        </ul>
+    </nav>
+
+    <!-- Frise chronologique synthétique -->
+    <div class="timeline-container">
+        <h2 style="text-align: center; color: #667eea; margin-bottom: 3rem; font-size: 2.5rem;">📅 Chronologie synthétique du XXe siècle</h2>
+        <div class="timeline">
+            <div class="timeline-event">
+                <div class="timeline-date">1870-1914</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Première mondialisation</h3>
+                    <p class="timeline-event-description">Expansion coloniale européenne, développement du commerce international, premières organisations internationales techniques, naissance des sports modernes.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Colonisation</span>
+                        <span class="timeline-tag">Libre-échange</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1914-1918</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Première Guerre mondiale</h3>
+                    <p class="timeline-event-description">Mobilisation coloniale massive, effondrement des empires, 14 points de Wilson, apparition du principe de sécurité collective.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Conflit mondial</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1919</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Création de la SDN et de l'OIT</h3>
+                    <p class="timeline-event-description">Première organisation internationale à vocation politique universelle. Traité de Versailles. Système des mandats.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Organisations</span>
+                        <span class="timeline-tag">Paix</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1929-1933</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Grande Dépression</h3>
+                    <p class="timeline-event-description">Première crise économique mondiale. Commerce mondial chute de 60%. Retour au protectionnisme. Déstabilisation politique.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Économie</span>
+                        <span class="timeline-tag">Crise</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1930s</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Montée des totalitarismes</h3>
+                    <p class="timeline-event-description">Instrumentalisation du sport par les régimes fasciste et nazi. JO Berlin 1936. Échec de la SDN face aux agressions.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Fascisme</span>
+                        <span class="timeline-tag">Propagande</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1939-1945</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Seconde Guerre mondiale</h3>
+                    <p class="timeline-event-description">Conflit planétaire. Mobilisation totale. Affaiblissement décisif de l'Europe. Émergence des superpuissances USA et URSS.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Conflit</span>
+                        <span class="timeline-tag">Génocide</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1944-1945</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Bretton Woods et création de l'ONU</h3>
+                    <p class="timeline-event-description">Nouvel ordre économique mondial (dollar, FMI, Banque mondiale). Charte de l'ONU. Conseil de Sécurité avec droit de veto.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Institutions</span>
+                        <span class="timeline-tag">Sécurité collective</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1945-1991</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Guerre froide</h3>
+                    <p class="timeline-event-description">Affrontement idéologique USA-URSS. Paralysie de l'ONU. Décolonisation. Boycotts olympiques. Crises à répétition (Cuba, Vietnam, Afghanistan).</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Bipolaire</span>
+                        <span class="timeline-tag">Proxy wars</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1945-1975</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Trente Glorieuses</h3>
+                    <p class="timeline-event-description">Expansion économique sans précédent. Société de consommation. État-providence. Migrations de travail massives vers l'Europe.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Croissance</span>
+                        <span class="timeline-tag">Migrations</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1947-1975</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Décolonisation</h3>
+                    <p class="timeline-event-description">Indépendances en cascade. Année de l'Afrique (1960). Guerres d'indépendance (Indochine, Algérie). Émergence du Tiers-Monde.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Émancipation</span>
+                        <span class="timeline-tag">Nouveaux États</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1951-1992</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Construction européenne</h3>
+                    <p class="timeline-event-description">CECA (1951), Traité de Rome (1957), Élargissements successifs, Maastricht (1992). Intégration économique et politique progressive.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Europe</span>
+                        <span class="timeline-tag">Intégration</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1973 & 1979</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Chocs pétroliers</h3>
+                    <p class="timeline-event-description">Fin des Trente Glorieuses. Inflation, chômage. Crise économique mondiale. Fermeture progressive des frontières européennes.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Énergie</span>
+                        <span class="timeline-tag">Crise</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1980s</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Tournant néolibéral</h3>
+                    <p class="timeline-event-description">Reagan et Thatcher. Dérégulation, privatisations. Financiarisation de l'économie. Creusement des inégalités.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Néolibéralisme</span>
+                        <span class="timeline-tag">Mondialisation</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1989-1991</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Fin de la Guerre froide</h3>
+                    <p class="timeline-event-description">Chute du Mur de Berlin (1989). Effondrement de l'URSS (1991). Migrations massives Est-Ouest. Nouvel ordre mondial ?</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Unipolarité</span>
+                        <span class="timeline-tag">Transitions</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">1995</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Création de l'OMC</h3>
+                    <p class="timeline-event-description">Institutionnalisation du libre-échange mondial. Remplace le GATT. Contestation altermondialiste croissante.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Commerce</span>
+                        <span class="timeline-tag">Mondialisation</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">2008</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Crise financière mondiale</h3>
+                    <p class="timeline-event-description">Subprimes. Déconnexion économie financière/réelle. Remise en question du néolibéralisme. Austérité en Europe.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Finance</span>
+                        <span class="timeline-tag">Crise</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">2015-2016</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Crise migratoire européenne</h3>
+                    <p class="timeline-event-description">Afflux massif de réfugiés syriens. Divisions européennes. Renforcement des frontières. Brexit (2016).</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Migrations</span>
+                        <span class="timeline-tag">Europe</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-event">
+                <div class="timeline-date">XXIe siècle</div>
+                <div class="timeline-event-content">
+                    <h3 class="timeline-event-title">Nouveaux enjeux</h3>
+                    <p class="timeline-event-description">Changement climatique. Migrations climatiques. Multipolarité (Chine). Soft power et sportswashing. Réseaux sociaux et information.</p>
+                    <div class="timeline-event-tags">
+                        <span class="timeline-tag">Climat</span>
+                        <span class="timeline-tag">Multipolarité</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="definitions">
+        <h2>I. Définitions et concepts fondamentaux des relations internationales</h2>
+        
+        <h3>Qu'est-ce que les relations internationales ?</h3>
+        
+        <div class="schema-box">
+            <h3 class="schema-title">🔑 Évolution de la définition</h3>
+            <div class="schema-grid">
+                <div class="schema-item">
+                    <div class="schema-item-title">❌ Définition traditionnelle (dépassée)</div>
+                    <div class="schema-item-content">
+                        <strong>Relations entre États</strong> uniquement<br>
+                        Focus sur la diplomatie et la politique étrangère<br>
+                        Vision stato-centrée
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">✅ Définition contemporaine</div>
+                    <div class="schema-item-content">
+                        <strong>Interactions multiples</strong> entre acteurs divers :<br>
+                        • États (rôle central mais non exclusif)<br>
+                        • Organisations internationales (OIG, ONG)<br>
+                        • Entreprises multinationales<br>
+                        • Individus et réseaux transnationaux
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Les acteurs des relations internationales</h3>
+        
+        <div class="schema-box">
+            <h3 class="schema-title">👥 Typologie des acteurs</h3>
+            <div class="schema-grid">
+                <div class="schema-item">
+                    <div class="schema-item-title">🏛️ États</div>
+                    <div class="schema-item-content">
+                        <strong>Acteurs principaux mais non exclusifs</strong><br>
+                        Puissance militaire, économique, culturelle, diplomatique<br>
+                        Souveraineté nationale vs intégration régionale
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">🌐 Organisations internationales</div>
+                    <div class="schema-item-content">
+                        <strong>OIG :</strong> ONU, UE, ASEAN, UA, OTAN<br>
+                        <strong>ONG :</strong> Amnesty, Greenpeace, MSF<br>
+                        Rôle croissant dans la gouvernance mondiale
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">🏢 Multinationales</div>
+                    <div class="schema-item-content">
+                        Chiffre d'affaires > PIB de nombreux États<br>
+                        Capacité de délocalisation<br>
+                        Optimisation fiscale internationale
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">👤 Individus</div>
+                    <div class="schema-item-content">
+                        Connectés globalement<br>
+                        Réseaux sociaux et mobilisations transnationales<br>
+                        Impact des décisions internationales sur la vie quotidienne
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Concepts clés</h3>
+        
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="info-card-icon">💪</div>
+                <div class="info-card-title">Puissance</div>
+                <div class="info-card-content">
+                    Capacité de modifier ou d'imposer sa volonté aux autres<br>
+                    <strong>Hard power :</strong> militaire, économique<br>
+                    <strong>Soft power :</strong> culturel, diplomatique
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🌍</div>
+                <div class="info-card-title">Mondialisation</div>
+                <div class="info-card-content">
+                    Intensification des échanges et interdépendances<br>
+                    Économique, culturel, politique<br>
+                    Processus inégal et contesté
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🔗</div>
+                <div class="info-card-title">Intégration régionale</div>
+                <div class="info-card-content">
+                    Apparition de relations d'interdépendance<br>
+                    Régionalisation (spontanée) vs Régionalisme (politique)<br>
+                    Différents niveaux d'intégration économique
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🤝</div>
+                <div class="info-card-title">Multilatéralisme</div>
+                <div class="info-card-content">
+                    Coopération entre plusieurs États<br>
+                    Via des organisations internationales<br>
+                    Opposé au bilatéralisme
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="organisations">
+        <h2>II. Les organisations internationales : structuration des relations internationales</h2>
+        
+        <h3>Histoire des organisations internationales</h3>
+        
+        <div class="timeline-container" style="margin: 2rem 0;">
+            <div class="timeline">
+                <div class="timeline-event">
+                    <div class="timeline-date">XIXe siècle</div>
+                    <div class="timeline-event-content">
+                        <h3 class="timeline-event-title">Premières organisations techniques</h3>
+                        <p class="timeline-event-description">
+                            1815 : Commission navigation Rhin<br>
+                            1865 : Union télégraphique<br>
+                            1874 : Union postale universelle<br>
+                            Répondre aux besoins du commerce international
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-date">1919</div>
+                    <div class="timeline-event-content">
+                        <h3 class="timeline-event-title">SDN et OIT</h3>
+                        <p class="timeline-event-description">
+                            Première organisation politique universelle<br>
+                            Principe de sécurité collective<br>
+                            Échec face aux agressions des années 1930
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-date">1945</div>
+                    <div class="timeline-event-content">
+                        <h3 class="timeline-event-title">Création de l'ONU</h3>
+                        <p class="timeline-event-description">
+                            Corrections des défauts de la SDN<br>
+                            Conseil de Sécurité avec veto<br>
+                            Agences fonctionnelles développées
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>La SDN (1919-1946) : premier essai de sécurité collective</h3>
+        
+        <div class="schema-box">
+            <h3 class="schema-title">⚖️ Bilan de la SDN</h3>
+            <div class="schema-grid">
+                <div class="schema-item">
+                    <div class="schema-item-title">❌ Échecs majeurs</div>
+                    <div class="schema-item-content">
+                        • Absence des États-Unis<br>
+                        • Règle de l'unanimité paralysante<br>
+                        • Pas de force militaire propre<br>
+                        • Incapacité face aux agressions (Mandchourie, Éthiopie)<br>
+                        • N'a pas empêché la WWII
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">✅ Réussites durables</div>
+                    <div class="schema-item-content">
+                        • OIT (toujours active aujourd'hui)<br>
+                        • Tribune anticoloniale (système des mandats)<br>
+                        • Coopération humanitaire (Passeport Nansen)<br>
+                        • Premières conventions internationales
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>L'ONU depuis 1945</h3>
+        
+        <div class="schema-box">
+            <h3 class="schema-title">🏛️ Structure de l'ONU</h3>
+            <div class="schema-grid">
+                <div class="schema-item">
+                    <div class="schema-item-title">Assemblée Générale</div>
+                    <div class="schema-item-content">
+                        193 États membres (2024)<br>
+                        Un État = une voix<br>
+                        Rôle consultatif et symbolique
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Conseil de Sécurité</div>
+                    <div class="schema-item-content">
+                        15 membres (5 permanents + 10 non permanents)<br>
+                        <strong>Droit de veto</strong> des P5<br>
+                        Pouvoir de décision contraignant
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Secrétariat</div>
+                    <div class="schema-item-content">
+                        Secrétaire général<br>
+                        Rôle diplomatique ("bons offices")<br>
+                        Administration de l'organisation
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Agences spécialisées</div>
+                    <div class="schema-item-content">
+                        UNESCO, OMS, FAO, OIT, FMI, BM...<br>
+                        Coopération fonctionnelle<br>
+                        Réparties géographiquement
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h4>⚠️ Limites persistantes de l'ONU</h4>
+            <ul>
+                <li><strong>Paralysie du Conseil de Sécurité</strong> : droit de veto utilisé par les P5 (USA, Russie, Chine, France, UK)</li>
+                <li><strong>Guerre froide (1945-1991)</strong> : blocage systématique sur les grands enjeux</li>
+                <li><strong>Échecs récents</strong> : Rwanda (1994), ex-Yougoslavie, Syrie, Darfour</li>
+                <li><strong>Difficultés à se réformer</strong> : composition du CS contestée, demandes de réforme bloquées</li>
+            </ul>
+        </div>
+
+        <h3>Organisations régionales</h3>
+        
+        <div class="schema-box">
+            <h3 class="schema-title">🌍 Principales organisations régionales</h3>
+            <div class="schema-grid">
+                <div class="schema-item">
+                    <div class="schema-item-title">🇪🇺 Union européenne</div>
+                    <div class="schema-item-content">
+                        <strong>Modèle le plus intégré</strong><br>
+                        27 États membres<br>
+                        Marché unique, monnaie commune (euro)<br>
+                        Institutions supranationales fortes
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">🌍 Union africaine</div>
+                    <div class="schema-item-content">
+                        55 États membres<br>
+                        Intégration économique limitée<br>
+                        Coopération sécuritaire croissante<br>
+                        CEDEAO : libre circulation en Afrique de l'Ouest
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">🌏 ASEAN</div>
+                    <div class="schema-item-content">
+                        Association des nations d'Asie du Sud-Est<br>
+                        10 États membres<br>
+                        Coopération économique et politique<br>
+                        Poids géopolitique croissant
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">🌎 ALENA/USMCA</div>
+                    <div class="schema-item-content">
+                        USA, Canada, Mexique<br>
+                        Zone de libre-échange<br>
+                        Pas d'intégration politique<br>
+                        Renégocié sous Trump (USMCA)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="colonisation">
+        <h2>III. Colonisation et décolonisation : transformation des rapports de force mondiaux</h2>
+        
+        <h3>L'expansion coloniale européenne</h3>
+        
+        <div class="schema-box">
+            <h3 class="schema-title">🗺️ Motivations de la colonisation</h3>
+            <div class="schema-grid">
+                <div class="schema-item">
+                    <div class="schema-item-title">💰 Économiques</div>
+                    <div class="schema-item-content">
+                        Recherche de débouchés commerciaux<br>
+                        Exploitation des ressources<br>
+                        Contrôle des routes commerciales
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">⚔️ Stratégiques</div>
+                    <div class="schema-item-content">
+                        Rivalité entre puissances européennes<br>
+                        Contrôle de points stratégiques<br>
+                        Prestige national
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">🎭 Idéologiques</div>
+                    <div class="schema-item-content">
+                        "Mission civilisatrice"<br>
+                        Supériorité raciale supposée<br>
+                        Expansion du christianisme
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">👥 Démographiques</div>
+                    <div class="schema-item-content">
+                        Exutoire à la croissance démographique<br>
+                        Colonisation de peuplement (Algérie)<br>
+                        Migrations forcées
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>La décolonisation (1945-1975)</h3>
+        
+        <div class="highlight-box">
+            <h4>⚡ Facteurs d'accélération après 1945</h4>
+            <ul>
+                <li><strong>Affaiblissement des métropoles</strong> : destructions de la WWII, perte de prestige</li>
+                <li><strong>Discours émancipateurs</strong> : Charte de l'Atlantique, droits de l'homme</li>
+                <li><strong>Soutien des superpuissances</strong> : USA et URSS anticolonialistes (pour des raisons différentes)</li>
+                <li><strong>Lutte armée</strong> : mouvements de libération nationale de plus en plus puissants</li>
+                <li><strong>Tribune internationale</strong> : ONU comme espace de revendication</li>
+            </ul>
+        </div>
+
+<div class="info-card">
+                <div class="info-card-icon">🌏</div>
+                <div class="info-card-title">Indépendances asiatiques</div>
+                <div class="info-card-content">
+                    <strong>1947 :</strong> Inde et Pakistan<br>
+                    <strong>1949 :</strong> Indonésie<br>
+                    <strong>1954 :</strong> Indochine (après guerre)<br>
+                    Souvent violentes et conflictuelles
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🌍</div>
+                <div class="info-card-title">Indépendances africaines</div>
+                <div class="info-card-content">
+                    <strong>1957 :</strong> Ghana (premier pays subsaharien)<br>
+                    <strong>1960 :</strong> "Année de l'Afrique" (16 pays)<br>
+                    <strong>1962 :</strong> Algérie (après guerre sanglante)<br>
+                    <strong>1975 :</strong> Colonies portugaises
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">☪️</div>
+                <div class="info-card-title">Proche-Orient</div>
+                <div class="info-card-content">
+                    <strong>1948 :</strong> Création d'Israël<br>
+                    <strong>1956 :</strong> Tunisie et Maroc<br>
+                    Fin des mandats britanniques et français<br>
+                    Début du conflit israélo-palestinien
+                </div>
+            </div>
+        </div>
+
+        <h3>Conséquences durables de la colonisation/décolonisation</h3>
+        
+        <div class="schema-box">
+            <h3 class="schema-title">🔄 Héritages complexes</h3>
+            <div class="schema-grid">
+                <div class="schema-item">
+                    <div class="schema-item-title">🗺️ Frontières artificielles</div>
+                    <div class="schema-item-content">
+                        Tracés coloniaux ne tenant pas compte des réalités ethniques/culturelles<br>
+                        Tensions et conflits persistants<br>
+                        Populations divisées entre plusieurs États
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">💰 Dépendance économique</div>
+                    <div class="schema-item-content">
+                        Économies extraverties (exportation matières premières)<br>
+                        Manque d'industries de transformation<br>
+                        Déséquilibres Nord-Sud persistants
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">🗣️ Héritages linguistiques</div>
+                    <div class="schema-item-content">
+                        Langues coloniales comme langues officielles<br>
+                        Facilite l'unité mais marginalise langues locales<br>
+                        Outil d'influence persistant des anciennes métropoles
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">🔗 Néocolonialisme</div>
+                    <div class="schema-item-content">
+                        Françafrique et relations post-coloniales<br>
+                        Accords de coopération déséquilibrés<br>
+                        Présence militaire persistante<br>
+                        Franc CFA et dépendance monétaire
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Débats mémoriels contemporains</h3>
+        
+        <div class="highlight-box">
+            <h4>📜 Questions mémorielles et restitution</h4>
+            <ul>
+                <li><strong>Reconnaissance des crimes coloniaux</strong> : massacres, pillages, exploitations</li>
+                <li><strong>Restitution du patrimoine</strong> : œuvres d'art, objets culturels volés</li>
+                <li><strong>Réparations</strong> : débat sur les compensations financières</li>
+                <li><strong>Décolonisation des savoirs</strong> : révision des curricula, épistémologies alternatives</li>
+                <li><strong>Mémoires divergentes</strong> : entre anciennes métropoles et anciennes colonies</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="migrations">
+        <h2>IV. Histoire des migrations internationales : mobilité humaine et enjeux contemporains</h2>
+        
+        <h3>Évolution des flux migratoires européens</h3>
+        
+        <div class="schema-box">
+            <h3 class="schema-title">🔄 L'inversion des flux migratoires européens</h3>
+            <div class="schema-grid">
+                <div class="schema-item">
+                    <div class="schema-item-title">📤 XIXe - début XXe : Europe terre d'ÉMIGRATION</div>
+                    <div class="info-card-content">
+                        <strong>Causes :</strong> pauvreté, famines (Irlande), crises politiques<br>
+                        <strong>Destinations :</strong> Amériques, colonies<br>
+                        <strong>Ampleur :</strong> Millions d'Européens (Irlandais, Italiens, Allemands, Polonais)<br>
+                        <strong>Exemple :</strong> 30 millions d'Italiens émigrent (1876-1976)
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">📥 Fin XXe - XXIe : Europe terre d'IMMIGRATION</div>
+                    <div class="info-card-content">
+                        <strong>Trente Glorieuses :</strong> appel massif de main-d'œuvre<br>
+                        <strong>Origine :</strong> anciennes colonies (Maghreb, Afrique subsaharienne)<br>
+                        <strong>1973 :</strong> fermeture progressive des frontières<br>
+                        <strong>Aujourd'hui :</strong> Europe forteresse, routes migratoires périlleuses
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Catégories de migrations</h3>
+        
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="info-card-icon">💼</div>
+                <div class="info-card-title">Migrations économiques</div>
+                <div class="info-card-content">
+                    <strong>Volontaires</strong> : recherche de travail, meilleures conditions de vie<br>
+                    <strong>Exemples :</strong> Travailleurs maghrébins en France (1950-70), travailleurs est-européens après 2004<br>
+                    <strong>Statut :</strong> pas de protection internationale spécifique
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">⚔️</div>
+                <div class="info-card-title">Migrations politiques</div>
+                <div class="info-card-content">
+                    <strong>Forcées</strong> : fuite de persécutions, guerres, dictatures<br>
+                    <strong>Exemples :</strong> Génocide arménien (1915), réfugiés espagnols (1936-39), Syriens (2011-)<br>
+                    <strong>Statut :</strong> réfugiés (Convention de Genève 1951)
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🌡️</div>
+                <div class="info-card-title">Migrations climatiques</div>
+                <div class="info-card-content">
+                    <strong>Émergentes</strong> : catastrophes naturelles, montée des eaux<br>
+                    <strong>Exemples :</strong> Bangladesh (18M personnes menacées), Tuvalu (accord avec Australie 2024)<br>
+                    <strong>Statut :</strong> non reconnu juridiquement (problème majeur)
+                </div>
+            </div>
+        </div>
+
+        <h3>Politiques migratoires restrictives</h3>
+        
+        <div class="highlight-box">
+            <h4>🏰 Construction de l'Europe forteresse</h4>
+            <ul>
+                <li><strong>1973 :</strong> Fin des Trente Glorieuses → fermeture progressive des frontières</li>
+                <li><strong>1985 :</strong> Accords de Schengen → libre circulation interne, frontières externes renforcées</li>
+                <li><strong>2004 :</strong> Création de Frontex (agence européenne de garde-frontières)</li>
+                <li><strong>2024 :</strong> Pacte migratoire européen (controversé)</li>
+            </ul>
+            
+            <p><strong>Conséquences :</strong></p>
+            <ul>
+                <li>Routes migratoires clandestines et dangereuses (Méditerranée)</li>
+                <li>Milliers de morts chaque année</li>
+                <li>Distinction croissante Européens vs non-Européens</li>
+                <li>Instrumentalisation politique (cas Biélorussie-Pologne 2021)</li>
+            </ul>
+        </div>
+
+        <h3>Migrations intra-africaines</h3>
+        
+        <div class="highlight-box">
+            <h4>🌍 Réalité méconnue : 80% des migrations africaines sont intra-africaines</h4>
+            <ul>
+                <li><strong>Migrations de travail :</strong> vers pays émergents (Ghana, Afrique du Sud)</li>
+                <li><strong>Transhumance transfrontalière :</strong> pratique millénaire (Touaregs, Peuls)</li>
+                <li><strong>Migrations forcées :</strong> conflits régionaux (Soudan du Sud, RDC, Boko Haram)</li>
+                <li><strong>CEDEAO :</strong> libre circulation en Afrique de l'Ouest depuis 1979</li>
+            </ul>
+        </div>
+
+        <h3>Défis du XXIe siècle</h3>
+        
+        <div class="schema-box">
+            <h3 class="schema-title">🔮 Projections et enjeux futurs</h3>
+            <div class="schema-grid">
+                <div class="schema-item">
+                    <div class="schema-item-title">Changement climatique</div>
+                    <div class="schema-item-content">
+                        <strong>140-250 millions</strong> de déplacés climatiques d'ici 2050<br>
+                        Absence de statut juridique<br>
+                        Régions vulnérables : Bangladesh, petits États insulaires, Sahel
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Pressions démographiques</div>
+                    <div class="schema-item-content">
+                        Population africaine devrait doubler d'ici 2050<br>
+                        Croissance urbaine massive<br>
+                        Jeunesse africaine (60% < 25 ans)
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Conflits persistants</div>
+                    <div class="schema-item-content">
+                        Guerres (Syrie, Ukraine, Soudan, RDC)<br>
+                        Persécutions (Rohingyas, Ouïghours)<br>
+                        Instabilité politique généralisée
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Politiques contradictoires</div>
+                    <div class="schema-item-content">
+                        Besoin de main-d'œuvre vs fermeture des frontières<br>
+                        Accueil sélectif (qualifiés vs non-qualifiés)<br>
+                        Montée des populismes anti-immigration
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="economie">
+        <h2>V. Relations économiques internationales : cycles et transformations</h2>
+        
+        <h3>Les phases de la mondialisation économique</h3>
+        
+        <div class="timeline-container" style="margin: 2rem 0;">
+            <div class="timeline">
+                <div class="timeline-event">
+                    <div class="timeline-date">1870-1914</div>
+                    <div class="timeline-event-content">
+                        <h3 class="timeline-event-title">Première mondialisation</h3>
+                        <p class="timeline-event-description">
+                            Expansion du commerce international<br>
+                            Colonisation comme moteur<br>
+                            Domination européenne
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-date">1914-1950</div>
+                    <div class="timeline-event-content">
+                        <h3 class="timeline-event-title">Repli protectionniste</h3>
+                        <p class="timeline-event-description">
+                            Guerres mondiales<br>
+                            Crise de 1929<br>
+                            Fermeture des économies
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-date">1945-1973</div>
+                    <div class="timeline-event-content">
+                        <h3 class="timeline-event-title">Trente Glorieuses</h3>
+                        <p class="timeline-event-description">
+                            Croissance exceptionnelle<br>
+                            Bretton Woods<br>
+                            État-providence
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-date">1980-2008</div>
+                    <div class="timeline-event-content">
+                        <h3 class="timeline-event-title">Seconde mondialisation</h3>
+                        <p class="timeline-event-description">
+                            Néolibéralisme triomphant<br>
+                            Financiarisation<br>
+                            Délocalisations massives
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>La crise de 1929 : première crise mondiale</h3>
+        
+        <div class="highlight-box">
+            <h4>💥 Mécanismes de la crise</h4>
+            <ul>
+                <li><strong>Octobre 1929 :</strong> Krach boursier à Wall Street</li>
+                <li><strong>Contagion mondiale :</strong> via les interdépendances commerciales et financières</li>
+                <li><strong>Commerce mondial :</strong> chute de 60% (1929-1933)</li>
+                <li><strong>Production industrielle :</strong> -36% aux USA, -26% en Allemagne</li>
+                <li><strong>Chômage massif :</strong> 25% aux USA, 30% en Allemagne</li>
+            </ul>
+            
+            <p><strong>Réponses nationales :</strong></p>
+            <ul>
+                <li>Protectionnisme généralisé (aggrave la crise)</li>
+                <li>Dévaluations compétitives</li>
+                <li>Absence de coopération internationale</li>
+                <li>Conséquences politiques : montée des fascismes</li>
+            </ul>
+        </div>
+
+        <h3>Le système de Bretton Woods (1944-1971)</h3>
+        
+        <div class="schema-box">
+            <h3 class="schema-title">💵 Le nouvel ordre économique mondial</h3>
+            <div class="schema-grid">
+                <div class="schema-item">
+                    <div class="schema-item-title">Dollar comme monnaie de référence</div>
+                    <div class="schema-item-content">
+                        Convertibilité or-dollar (35$/once)<br>
+                        Autres monnaies arrimées au dollar<br>
+                        Hégémonie monétaire américaine
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">FMI (Fonds Monétaire International)</div>
+                    <div class="schema-item-content">
+                        Stabilité du système monétaire<br>
+                        Prêts d'ajustement<br>
+                        Contrôle des grandes puissances
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Banque mondiale</div>
+                    <div class="schema-item-content">
+                        Financement de la reconstruction<br>
+                        Puis développement du Tiers-Monde<br>
+                        Conditionnalités controversées
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">GATT puis OMC (1995)</div>
+                    <div class="schema-item-content">
+                        Réduction progressive des droits de douane<br>
+                        Libéralisation du commerce<br>
+                        Règlement des différends commerciaux
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Les Trente Glorieuses (1945-1973)</h3>
+        
+        <div class="highlight-box">
+            <h4>📈 Caractéristiques de la période</h4>
+            <ul>
+                <li><strong>Croissance forte :</strong> 5% par an en moyenne en Europe</li>
+                <li><strong>Plein emploi :</strong> chômage quasi inexistant</li>
+                <li><strong>Société de consommation :</strong> démocratisation des biens durables</li>
+                <li><strong>État-providence :</strong> protection sociale généralisée</li>
+                <li><strong>Migrations de travail :</strong> appel massif de main-d'œuvre étrangère</li>
+                <li><strong>Reconstruction :</strong> Plan Marshall en Europe</li>
+            </ul>
+        </div>
+
+        <h3>Les crises pétrolières (1973 & 1979)</h3>
+        
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="info-card-icon">🛢️</div>
+                <div class="info-card-title">1er choc (1973)</div>
+                <div class="info-card-content">
+                    Guerre du Kippour<br>
+                    OPEP quadruple le prix du pétrole<br>
+                    Fin des Trente Glorieuses<br>
+                    Inflation + récession (stagflation)
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🛢️</div>
+                <div class="info-card-title">2e choc (1979)</div>
+                <div class="info-card-content">
+                    Révolution iranienne<br>
+                    Nouvelle hausse massive<br>
+                    Renforcement de la crise<br>
+                    Chômage structurel
+                </div>
+            </div>
+        </div>
+
+        <h3>Le tournant néolibéral (années 1980)</h3>
+        
+        <div class="schema-box">
+            <h3 class="schema-title">🔄 Reagan et Thatcher : nouvelle doctrine</h3>
+            <div class="schema-grid">
+                <div class="schema-item">
+                    <div class="schema-item-title">Dérégulation</div>
+                    <div class="schema-item-content">
+                        Libéralisation des marchés financiers<br>
+                        Suppression des contrôles de capitaux<br>
+                        Ouverture à la concurrence
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Privatisations</div>
+                    <div class="schema-item-content">
+                        Entreprises publiques vendues<br>
+                        Réduction du rôle de l'État<br>
+                        Retrait des services publics
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Baisse des impôts</div>
+                    <div class="schema-item-content">
+                        Surtout pour les riches et les entreprises<br>
+                        Théorie du "ruissellement"<br>
+                        Creusement des inégalités
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Affaiblissement syndical</div>
+                    <div class="schema-item-content">
+                        Répression des grèves (mineurs UK)<br>
+                        Diminution des protections sociales<br>
+                        Flexibilisation du travail
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Caractéristiques de la seconde mondialisation</h3>
+        
+        <div class="highlight-box">
+            <h4>🌐 Nouvelle phase de mondialisation</h4>
+            <ul>
+                <li><strong>Financiarisation :</strong> déconnexion économie financière/réelle</li>
+                <li><strong>Délocalisations :</strong> industries vers pays à bas coûts</li>
+                <li><strong>Chaînes de valeur mondiales :</strong> production fragmentée</li>
+                <li><strong>Émergence BRICS :</strong> nouvelles puissances économiques</li>
+                <li><strong>Libéralisation commerciale :</strong> OMC (1995)</li>
+                <li><strong>Révolution numérique :</strong> internet et TIC</li>
+                <li><strong>Inégalités croissantes :</strong> entre et à l'intérieur des pays</li>
+            </ul>
+        </div>
+
+        <h3>Crise de 2008 et remises en question</h3>
+        
+        <div class="highlight-box">
+            <h4>💥 Crise financière mondiale</h4>
+            <ul>
+                <li><strong>Origine :</strong> crise des subprimes aux États-Unis</li>
+                <li><strong>Contagion :</strong> système financier mondialisé</li>
+                <li><strong>Interventions massives :</strong> sauvetage des banques par les États</li>
+                <li><strong>Austérité en Europe :</strong> coupes budgétaires drastiques</li>
+                <li><strong>Remise en question :</strong> du néolibéralisme et de la financiarisation</li>
+                <li><strong>Conséquences politiques :</strong> montée des populismes</li>
+            </ul>
+        </div>
+
+        <h3>Résistances à la mondialisation néolibérale</h3>
+        
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="info-card-icon">🌍</div>
+                <div class="info-card-title">Altermondialisme</div>
+                <div class="info-card-content">
+                    Forum Social Mondial (opposition à Davos)<br>
+                    "Un autre monde est possible"<br>
+                    ATTAC : taxation des transactions financières
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">🌱</div>
+                <div class="info-card-title">Mouvement écologiste</div>
+                <div class="info-card-content">
+                    Critique de la croissance illimitée<br>
+                    Décroissance, économie circulaire<br>
+                    Urgence climatique
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">⚖️</div>
+                <div class="info-card-title">Commerce équitable</div>
+                <div class="info-card-content">
+                    Prix justes pour les producteurs<br>
+                    Circuits courts<br>
+                    Consommation responsable
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="culture">
+        <h2>VI. Diplomatie culturelle : soft power et influence</h2>
+        
+        <h3>Évolution historique</h3>
+        
+        <div class="timeline-container" style="margin: 2rem 0;">
+            <div class="timeline">
+                <div class="timeline-event">
+                    <div class="timeline-date">XIXe siècle</div>
+                    <div class="timeline-event-content">
+                        <h3 class="timeline-event-title">Échanges artistiques spontanés</h3>
+                        <p class="timeline-event-description">
+                            Circulation des œuvres et artistes<br>
+                            Salons, expositions universelles<br>
+                            Peu d'implication étatique
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-date">1918-1945</div>
+                    <div class="timeline-event-content">
+                        <h3 class="timeline-event-title">Instrumentalisation politique</h3>
+                        <p class="timeline-event-description">
+                            Propagande durant les guerres<br>
+                            Régimes totalitaires (nazis, fascistes)<br>
+                            Culture = arme idéologique
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-date">Après 1945</div>
+                    <div class="timeline-event-content">
+                        <h3 class="timeline-event-title">Institutionnalisation</h3>
+                        <p class="timeline-event-description">
+                            Création d'institutions culturelles<br>
+                            Budgets dédiés importants<br>
+                            Diplomatie culturelle organisée
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Le modèle français : une ambition ancienne</h3>
+        
+        <div class="schema-box">
+            <h3 class="schema-title">🇫🇷 Instruments de la diplomatie culturelle française</h3>
+            <div class="schema-grid">
+                <div class="schema-item">
+                    <div class="schema-item-title">Alliance Française (1883)</div>
+                    <div class="schema-item-content">
+                        Premier réseau mondial d'enseignement linguistique<br>
+                        Modèle pour autres pays<br>
+                        Centaines de sites dans le monde
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Instituts français</div>
+                    <div class="schema-item-content">
+                        Dans les capitales mondiales<br>
+                        Expositions, conférences, cours<br>
+                        Vitrine de la culture française
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Services de coopération (SCAC)</div>
+                    <div class="schema-item-content">
+                        Dans les ambassades<br>
+                        Coopération universitaire et scientifique<br>
+                        Échanges culturels bilatéraux
+                    </div>
+                </div>
+                <div class="schema-item">
+                    <div class="schema-item-title">Budget conséquent</div>
+                    <div class="schema-item-content">
+                        Années 1960-80 : 50-60% du budget du MAE<br>
+                        Investissement stratégique majeur<br>
+                        En déclin relatif aujourd'hui
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>L'hégémonie culturelle américaine</h3>
+        
+        <div class="highlight-box">
+            <h4>🇺🇸 Hollywood et le soft power américain</h4>
+            <ul>
+                <li><strong>Cinéma :</strong> vecteur principal du rêve américain</li>
+                <li><strong>Soutien gouvernemental :</strong> pendant WWII et après</li>
+                <li><strong>Exportation massive :</strong> domination des écrans mondiaux</li>
+                <li><strong>Valeurs diffusées :</strong> démocratie, liberté, individualisme, consumérisme</li>
+                <li><strong>"Américanisation" :</strong> des modes de vie, culture populaire</li>
+                <li><strong>Musique :</strong> jazz, rock, hip-hop influencent le monde entier</li>
+                <li><strong>Marques :</strong> Coca-Cola, McDonald's, Nike comme symboles</li>
+            </ul>
+        </div>
+
+        <h3>Nouveaux acteurs émergents</h3>
+        
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="info-card-icon">🇨🇳</div>
+                <div class="info-card-title">Chine</div>
+                <div class="info-card-content">
+                    <strong>Instituts Confucius :</strong> réseau mondial d'enseignement du chinois<br>
+                    Investissements massifs<br>
+
+
+{% endblock %}

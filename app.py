@@ -91,6 +91,12 @@ def histoire_ri_index():
             'titre': 'Relations économiques internationales au XXe siècle',
             'description': 'Mondialisation, crises et question environnementale',
             'url': '/histoire-ri/cours/economie-20e'
+        },
+        {
+            'id': 'synthese',
+            'titre': 'Synthese des relations économiques internationales au XXe siècle',
+            'description': 'Résumé et points clés des cours précédents',
+            'url': '/histoire-ri/cours/synthese'
         }
     ]
     return render_template('histoire_ri_index.html', cours=cours_list)
@@ -131,7 +137,9 @@ def cours_sport():
 def cours_economie():
     return render_template('histoire_ri/cours_economie.html')
 
-
+@app.route('/histoire-ri/cours/synthese')
+def cours_synthese():
+    return render_template('histoire_ri/cours_synthese.html')   
 # ============================================
 # SECTION 2 : GÉOPOLITIQUE
 # ============================================
