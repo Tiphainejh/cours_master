@@ -139,7 +139,8 @@ def cours_economie():
 
 @app.route('/histoire-ri/cours/synthese')
 def cours_synthese():
-    return render_template('histoire_ri/cours_synthese.html')   
+    return render_template('histoire_ri/synthese.html')   
+
 # ============================================
 # SECTION 2 : GÉOPOLITIQUE
 # ============================================
